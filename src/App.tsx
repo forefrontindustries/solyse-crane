@@ -1,0 +1,24 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HomePage } from "./pages/HomePage"
+import { IndustryPage } from "./pages/IndustryPage"
+import { IndustriesLanding } from "./pages/IndustriesLanding"
+import { LocationsLanding } from "./pages/LocationsLanding"
+import { LocationPage } from "./pages/LocationPage"
+import { SolutionsLanding } from "./pages/SolutionsLanding"
+import { SolutionPage } from "./pages/SolutionPage"
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/industries" element={<IndustriesLanding />} />
+        <Route path="/industries/:slug" element={<IndustryPage />} />
+        <Route path="/locations" element={<LocationsLanding />} />
+        <Route path="/locations/*" element={<LocationPage />} />
+        <Route path="/solutions" element={<SolutionsLanding />} />
+        <Route path="/solutions/:slug" element={<SolutionPage />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}

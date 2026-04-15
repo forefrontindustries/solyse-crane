@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* ============================================================
+   CRANE WORLDWIDE – Design System
+   Ported from Vercel/Next.js version → plain Vite + React
+   Fonts: DM Sans (body) + Plus Jakarta Sans (headings)
+   Colors: Navy primary + Green secondary (oklch → hex fallbacks)
+   ============================================================ */
+
+@theme {
+  /* Primary – Navy Blue (#273473 equivalent in oklch) */
+  --color-primary: oklch(0.28 0.08 260);
+  --color-primary-foreground: #ffffff;
+
+  /* Secondary – Green (#01803E equivalent) */
+  --color-secondary: oklch(0.55 0.18 155);
+  --color-secondary-foreground: oklch(0.18 0.04 260);
+
+  /* Surfaces */
+  --color-background: #ffffff;
+  --color-foreground: oklch(0.18 0.04 260);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.18 0.04 260);
+  --color-muted: oklch(0.96 0.01 260);
+  --color-muted-foreground: oklch(0.45 0.03 260);
+  --color-border: oklch(0.92 0.01 260);
+  --color-input: oklch(0.92 0.01 260);
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+}
+
+/* ─── Base ──────────────────────────────────── */
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+/* Custom scrollbar (from base44 version) */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--color-muted); }
+::-webkit-scrollbar-thumb { background: var(--color-secondary); border-radius: 2px; }
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  margin: 0;
+}
+
+.font-display {
+  font-family: 'Plus Jakarta Sans', 'DM Sans', system-ui, sans-serif;
+}
+
+/* ─── Animations ───────────────────────────── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 166, 81, 0.4); }
+  50% { box-shadow: 0 0 20px 10px rgba(0, 166, 81, 0); }
+}
+
+.animate-float { animation: float 3s ease-in-out infinite; }
+
+/* fade-in for tab transitions */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fade-in 0.3s ease-out; }

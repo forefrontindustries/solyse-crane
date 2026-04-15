@@ -1,0 +1,6 @@
+{
+  "id": "crane-site",
+  "name": "Crane Worldwide Logistics",
+  "port": 9666,
+  "type": "vite"
+}
