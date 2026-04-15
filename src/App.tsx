@@ -6,6 +6,7 @@ import { LocationsLanding } from "./pages/LocationsLanding"
 import { LocationPage } from "./pages/LocationPage"
 import { SolutionsLanding } from "./pages/SolutionsLanding"
 import { SolutionPage } from "./pages/SolutionPage"
+import { HomePageV2 } from "./pages/HomePageV2"
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/locations/*" element={<LocationPage />} />
         <Route path="/solutions" element={<SolutionsLanding />} />
         <Route path="/solutions/:slug" element={<SolutionPage />} />
+        <Route path="/v2" element={<HomePageV2 />} />
       </Routes>
     </BrowserRouter>
   )
