@@ -136,60 +136,100 @@ function UtilityRow() {
 function IndustryEntry() {
   const reveal = useReveal()
   const industries = [
-    { name: "Aerospace", slug: "aerospace-defense", image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=600&q=80&auto=format", signals: ["Time-critical delivery", "Global compliance", "High-value cargo handling"] },
-    { name: "Automotive", slug: "automotive", image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&q=80&auto=format", signals: ["JIT/JIS delivery", "Sequenced logistics", "EV supply chains"] },
-    { name: "Energy", slug: "energy", image: "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=600&q=80&auto=format", signals: ["Heavy-lift cargo", "Offshore logistics", "Renewable energy"] },
-    { name: "Life Sciences", slug: "healthcare", image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=80&auto=format", signals: ["Cold chain logistics", "Regulatory compliance", "End-to-end visibility"] },
-    { name: "Hi-Tech", slug: "high-tech", image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80&auto=format", signals: ["Speed-to-market", "High-value security", "Data center logistics"] },
-    { name: "Industrial", slug: "industrial", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80&auto=format", signals: ["Heavy machinery", "Plant relocations", "Manufacturing supply chains"] },
+    { name: "Aerospace & Defense", slug: "aerospace-defense", image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800&q=80&auto=format", signals: ["Time-critical delivery", "Global compliance", "High-value cargo"], size: "large" as const },
+    { name: "Automotive", slug: "automotive", image: "https://images.unsplash.com/photo-1565043666747-69f6646db940?w=800&q=80&auto=format", signals: ["JIT/JIS delivery", "Sequenced logistics", "EV supply chains"], size: "medium" as const },
+    { name: "Life Sciences", slug: "healthcare", image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&q=80&auto=format", signals: ["Cold chain", "Regulatory compliance", "End-to-end visibility"], size: "medium" as const },
+    { name: "Energy", slug: "energy", image: "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=800&q=80&auto=format", signals: ["Heavy-lift cargo", "Offshore logistics", "Renewable energy"], size: "medium" as const },
+    { name: "Hi-Tech", slug: "high-tech", image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&auto=format", signals: ["Speed-to-market", "High-value security", "Data center logistics"], size: "medium" as const },
+    { name: "Industrial", slug: "industrial", image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80&auto=format", signals: ["Heavy machinery", "Plant relocations", "Manufacturing"], size: "large" as const },
   ]
 
   return (
-    <section ref={reveal.ref as React.RefObject<HTMLElement>} className="py-20 lg:py-24 px-6 lg:px-12">
+    <section ref={reveal.ref as React.RefObject<HTMLElement>} className="py-20 lg:py-28 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className={cn("mb-10 transition-all duration-700", reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
+        {/* Header */}
+        <div className={cn("mb-12 transition-all duration-700", reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
           <div className="flex items-center gap-2 mb-3">
             <span className="w-6 h-[3px] bg-secondary rounded-full" />
-            <span className="text-[11px] font-semibold tracking-[0.15em] uppercase text-secondary">Your Industry</span>
+            <span className="text-[11px] font-semibold tracking-[0.15em] uppercase text-secondary">Industries We Serve</span>
           </div>
-          <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-2">Find your industry solution</h2>
-          <p className="text-muted-foreground text-[15px] max-w-lg">Solutions tailored to your business and supply chain challenges.</p>
-        </div>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {industries.map((ind, i) => (
-            <Link
-              key={ind.slug}
-              to={`/industries/${ind.slug}`}
-              className={cn(
-                "group rounded-xl overflow-hidden border border-border/50 hover:border-secondary/30 hover:shadow-lg transition-all duration-300 hover:-translate-y-1",
-                reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-              )}
-              style={{ transitionDelay: reveal.visible ? `${150 + i * 80}ms` : "0ms" }}
-            >
-              <div className="h-[160px] overflow-hidden">
-                <img src={ind.image} alt={ind.name} className="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500" />
-              </div>
-              <div className="p-5">
-                <h3 className="font-display font-bold text-lg text-foreground mb-2 group-hover:text-secondary transition-colors">{ind.name}</h3>
-                <ul className="space-y-1 mb-4">
-                  {ind.signals.map((s) => (
-                    <li key={s} className="flex items-center gap-2 text-[13px] text-muted-foreground">
-                      <span className="w-1 h-1 rounded-full bg-secondary flex-shrink-0" />
-                      {s}
-                    </li>
-                  ))}
-                </ul>
-                <span className="text-[13px] font-semibold text-secondary group-hover:underline">Explore solutions →</span>
-              </div>
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+            <div>
+              <h2 className="font-display text-3xl lg:text-[2.75rem] font-bold text-foreground leading-tight">Built for the world's most<br className="hidden lg:block" /> demanding supply chains</h2>
+            </div>
+            <Link to="/industries" className="text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors whitespace-nowrap flex items-center gap-1.5 group">
+              All 10 industries <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
             </Link>
-          ))}
+          </div>
         </div>
 
-        <div className="text-center mt-8">
-          <Link to="/industries" className="text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors">
-            View all 10 industries →
-          </Link>
+        {/* Bento Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 auto-rows-[200px] lg:auto-rows-[220px]">
+          {industries.map((ind, i) => {
+            const isLarge = ind.size === "large"
+            return (
+              <Link
+                key={ind.slug}
+                to={`/industries/${ind.slug}`}
+                className={cn(
+                  "group relative rounded-2xl overflow-hidden cursor-pointer",
+                  isLarge ? "md:col-span-2 md:row-span-2" : "md:col-span-1 md:row-span-1",
+                  "transition-all duration-500",
+                  reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                )}
+                style={{ transitionDelay: reveal.visible ? `${100 + i * 100}ms` : "0ms" }}
+              >
+                {/* Background image */}
+                <img
+                  src={ind.image}
+                  alt={ind.name}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+
+                {/* Gradient overlay — stronger on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent group-hover:from-black/90 group-hover:via-black/40 transition-all duration-500" />
+
+                {/* Accent bar top-left */}
+                <div className="absolute top-0 left-0 w-0 h-[3px] bg-secondary group-hover:w-full transition-all duration-500 ease-out" />
+
+                {/* Content */}
+                <div className="absolute inset-0 p-5 lg:p-6 flex flex-col justify-end">
+                  {/* Industry name */}
+                  <h3 className={cn(
+                    "font-display font-bold text-white mb-2 leading-tight",
+                    isLarge ? "text-2xl lg:text-3xl" : "text-lg lg:text-xl"
+                  )}>
+                    {ind.name}
+                  </h3>
+
+                  {/* Signals — slide up on hover */}
+                  <div className={cn(
+                    "overflow-hidden transition-all duration-500 ease-out",
+                    isLarge ? "max-h-0 group-hover:max-h-[120px] opacity-0 group-hover:opacity-100" : "max-h-0 group-hover:max-h-[100px] opacity-0 group-hover:opacity-100"
+                  )}>
+                    <div className="flex flex-wrap gap-1.5 mb-3 pt-1">
+                      {ind.signals.map((s) => (
+                        <span key={s} className="text-[11px] font-medium text-white/90 bg-white/15 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/10">
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                    <span className="text-[13px] font-semibold text-secondary flex items-center gap-1.5">
+                      Explore solutions <span className="inline-block group-hover:translate-x-1 transition-transform duration-300">→</span>
+                    </span>
+                  </div>
+
+                  {/* Arrow hint visible by default on small tiles */}
+                  <div className={cn(
+                    "transition-all duration-500",
+                    "group-hover:opacity-0 group-hover:-translate-y-2"
+                  )}>
+                    <span className="text-[12px] text-white/60 font-medium">Hover to explore</span>
+                  </div>
+                </div>
+              </Link>
+            )
+          })}
         </div>
       </div>
     </section>
