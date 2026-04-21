@@ -168,56 +168,54 @@ function ChallengesSection() {
 
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="py-24 px-6 lg:px-12 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className={cn("mb-14 transition-all duration-700", visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
-          <div className="flex items-center gap-2.5 mb-3">
-            <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
-            <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
-              Aerospace Logistics Risks
-            </span>
-          </div>
-          <h2 className="font-display font-extrabold text-[clamp(28px,3.8vw,46px)] leading-[1.08] text-foreground tracking-tight">
-            Where Aerospace Supply Chains<br />Break Down
-          </h2>
+      <div className={cn("mb-14 transition-all duration-700", visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
+        <div className="flex items-center gap-2.5 mb-3">
+          <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
+          <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
+            Aerospace Logistics Risks
+          </span>
         </div>
+        <h2 className="font-display font-extrabold text-[clamp(28px,3.8vw,46px)] leading-[1.08] text-foreground tracking-tight">
+          Where Aerospace Supply Chains<br />Break Down
+        </h2>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {challenges.map((c, i) => (
-            <div
-              key={c.title}
-              className={cn(
-                "group relative bg-[#f4f6f9] rounded-xl p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(11,37,69,0.08)]",
-                visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-              )}
-              style={{ transitionDelay: `${i * 80}ms` }}
-            >
-              {/* Top accent */}
-              <div className="absolute top-0 left-8 right-8 h-[2px] bg-secondary/30 rounded-b group-hover:bg-secondary transition-colors duration-300" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        {challenges.map((c, i) => (
+          <div
+            key={c.title}
+            className={cn(
+              "group relative bg-[#f4f6f9] rounded-xl p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(11,37,69,0.08)]",
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            )}
+            style={{ transitionDelay: `${i * 80}ms` }}
+          >
+            {/* Top accent */}
+            <div className="absolute top-0 left-8 right-8 h-[2px] bg-secondary/30 rounded-b group-hover:bg-secondary transition-colors duration-300" />
 
-              {/* Icon */}
-              <div className="w-11 h-11 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
-                {c.icon}
-              </div>
-
-              <h3 className="font-display font-bold text-[18px] text-foreground mb-2 group-hover:text-secondary transition-colors">
-                {c.title}
-              </h3>
-              <p className="text-[14px] text-muted-foreground leading-[1.7] mb-4">
-                {c.body}
-              </p>
-
-              {/* Signal bullets */}
-              <ul className="space-y-1.5">
-                {c.signals.map((s) => (
-                  <li key={s} className="flex items-center gap-2.5 text-[13px] text-foreground/80">
-                    <span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0" />
-                    {s}
-                  </li>
-                ))}
-              </ul>
+            {/* Icon */}
+            <div className="w-11 h-11 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
+              {c.icon}
             </div>
-          ))}
-        </div>
+
+            <h3 className="font-display font-bold text-[18px] text-foreground mb-2 group-hover:text-secondary transition-colors">
+              {c.title}
+            </h3>
+            <p className="text-[14px] text-muted-foreground leading-[1.7] mb-4">
+              {c.body}
+            </p>
+
+            {/* Signal bullets */}
+            <ul className="space-y-1.5">
+              {c.signals.map((s) => (
+                <li key={s} className="flex items-center gap-2.5 text-[13px] text-foreground/80">
+                  <span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0" />
+                  {s}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   )
@@ -258,59 +256,57 @@ function ServicesSection() {
 
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="py-24 px-6 lg:px-12 bg-[#f4f6f9]">
-      <div className="max-w-7xl mx-auto">
-        <div className={cn("mb-14 transition-all duration-700", visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
-          <div className="flex items-center gap-2.5 mb-3">
-            <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
-            <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
-              Our Solutions for Aerospace
-            </span>
-          </div>
-          <h2 className="font-display font-extrabold text-[clamp(28px,3.8vw,46px)] leading-[1.08] text-foreground tracking-tight">
-            Services Built for<br />Your Requirements
-          </h2>
+      <div className={cn("mb-14 transition-all duration-700", visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
+        <div className="flex items-center gap-2.5 mb-3">
+          <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
+          <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
+            Our Solutions for Aerospace
+          </span>
         </div>
+        <h2 className="font-display font-extrabold text-[clamp(28px,3.8vw,46px)] leading-[1.08] text-foreground tracking-tight">
+          Services Built for<br />Your Requirements
+        </h2>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {services.map((s, i) => (
-            <Link
-              key={s.name}
-              to={s.href}
-              className={cn(
-                "group bg-white rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(11,37,69,0.08)]",
-                visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-              )}
-              style={{ transitionDelay: `${i * 80}ms` }}
-            >
-              {/* Green header */}
-              <div className="bg-secondary px-6 py-3.5">
-                <span className="text-white font-display font-bold text-[15px]">{s.name}</span>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {services.map((s, i) => (
+          <Link
+            key={s.name}
+            to={s.href}
+            className={cn(
+              "group bg-white rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(11,37,69,0.08)]",
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            )}
+            style={{ transitionDelay: `${i * 80}ms` }}
+          >
+            {/* Green header */}
+            <div className="bg-secondary px-6 py-3.5">
+              <span className="text-white font-display font-bold text-[15px]">{s.name}</span>
+            </div>
+
+            <div className="p-6 flex flex-col h-[calc(100%-48px)]">
+              <ul className="space-y-2.5 flex-1">
+                {s.bullets.map((b) => (
+                  <li key={b} className="flex items-start gap-2.5 text-[13px] text-muted-foreground leading-[1.5]">
+                    <span className="w-1 h-1 rounded-full bg-secondary mt-[7px] flex-shrink-0" />
+                    {b}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Outcome line */}
+              <div className="mt-5 pt-4 border-t border-border/50">
+                <p className="text-[13px] text-foreground/70 leading-[1.5] italic">
+                  → {s.outcome}
+                </p>
               </div>
 
-              <div className="p-6 flex flex-col h-[calc(100%-48px)]">
-                <ul className="space-y-2.5 flex-1">
-                  {s.bullets.map((b) => (
-                    <li key={b} className="flex items-start gap-2.5 text-[13px] text-muted-foreground leading-[1.5]">
-                      <span className="w-1 h-1 rounded-full bg-secondary mt-[7px] flex-shrink-0" />
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Outcome line */}
-                <div className="mt-5 pt-4 border-t border-border/50">
-                  <p className="text-[13px] text-foreground/70 leading-[1.5] italic">
-                    → {s.outcome}
-                  </p>
-                </div>
-
-                <div className="text-[13px] font-semibold text-secondary flex items-center gap-1.5 mt-4 group-hover:gap-2.5 transition-all">
-                  Learn More →
-                </div>
+              <div className="text-[13px] font-semibold text-secondary flex items-center gap-1.5 mt-4 group-hover:gap-2.5 transition-all">
+                Learn More →
               </div>
-            </Link>
-          ))}
-        </div>
+            </div>
+          </Link>
+        ))}
       </div>
     </section>
   )
@@ -363,40 +359,38 @@ function WhyCraneSection() {
 
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="py-24 px-6 lg:px-12 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className={cn("mb-14 transition-all duration-700", visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
-          <div className="flex items-center gap-2.5 mb-3">
-            <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
-            <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
-              The Crane Difference
-            </span>
-          </div>
-          <h2 className="font-display font-extrabold text-[clamp(28px,3.8vw,46px)] leading-[1.08] text-foreground tracking-tight">
-            Why Aerospace Leaders<br />Choose Crane
-          </h2>
+      <div className={cn("mb-14 transition-all duration-700", visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
+        <div className="flex items-center gap-2.5 mb-3">
+          <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
+          <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
+            The Crane Difference
+          </span>
         </div>
+        <h2 className="font-display font-extrabold text-[clamp(28px,3.8vw,46px)] leading-[1.08] text-foreground tracking-tight">
+          Why Aerospace Leaders<br />Choose Crane
+        </h2>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {reasons.map((r, i) => (
-            <div
-              key={r.title}
-              className={cn(
-                "group relative transition-all duration-500",
-                visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-              )}
-              style={{ transitionDelay: `${i * 100}ms` }}
-            >
-              {/* Left accent line */}
-              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-secondary/20 rounded-full group-hover:bg-secondary transition-colors duration-300" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {reasons.map((r, i) => (
+          <div
+            key={r.title}
+            className={cn(
+              "group relative transition-all duration-500",
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            )}
+            style={{ transitionDelay: `${i * 100}ms` }}
+          >
+            {/* Left accent line */}
+            <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-secondary/20 rounded-full group-hover:bg-secondary transition-colors duration-300" />
 
-              <div className="pl-6">
-                <div className="text-secondary mb-4">{r.icon}</div>
-                <h3 className="font-display font-bold text-[17px] text-foreground mb-2">{r.title}</h3>
-                <p className="text-[14px] text-muted-foreground leading-[1.7]">{r.body}</p>
-              </div>
+            <div className="pl-6">
+              <div className="text-secondary mb-4">{r.icon}</div>
+              <h3 className="font-display font-bold text-[17px] text-foreground mb-2">{r.title}</h3>
+              <p className="text-[14px] text-muted-foreground leading-[1.7]">{r.body}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   )
@@ -410,13 +404,12 @@ function CViewSection() {
 
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="px-6 lg:px-12 py-16 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div
-          className={cn(
-            "bg-foreground rounded-2xl px-8 lg:px-12 py-10 flex flex-col lg:flex-row items-center justify-between gap-8 transition-all duration-700",
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          )}
-        >
+      <div
+        className={cn(
+          "bg-foreground rounded-2xl px-8 lg:px-12 py-10 flex flex-col lg:flex-row items-center justify-between gap-8 transition-all duration-700",
+          visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+        )}
+      >
           <div className="flex-1">
             <div className="flex items-center gap-2.5 mb-2.5">
               <span className="text-[10px] font-bold tracking-[0.14em] uppercase text-white/40">
@@ -436,7 +429,6 @@ function CViewSection() {
           >
             Explore Visibility Tools →
           </a>
-        </div>
       </div>
     </section>
   )
@@ -474,65 +466,63 @@ function CaseStudiesSection() {
 
   return (
     <section ref={ref as React.RefObject<HTMLElement>} className="py-24 px-6 lg:px-12 bg-[#f4f6f9]">
-      <div className="max-w-7xl mx-auto">
-        <div className={cn("mb-14 transition-all duration-700", visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
-          <div className="flex items-center gap-2.5 mb-3">
-            <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
-            <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
-              Proven Results
-            </span>
-          </div>
-          <h2 className="font-display font-extrabold text-[clamp(28px,3.8vw,46px)] leading-[1.08] text-foreground tracking-tight">
-            Aerospace & Defense Case Studies
-          </h2>
+      <div className={cn("mb-14 transition-all duration-700", visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
+        <div className="flex items-center gap-2.5 mb-3">
+          <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
+          <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
+            Proven Results
+          </span>
         </div>
+        <h2 className="font-display font-extrabold text-[clamp(28px,3.8vw,46px)] leading-[1.08] text-foreground tracking-tight">
+          Aerospace & Defense Case Studies
+        </h2>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {studies.map((cs, i) => (
-            <a
-              key={cs.title}
-              href="#"
-              className={cn(
-                "group bg-white rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(11,37,69,0.08)]",
-                visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-              )}
-              style={{ transitionDelay: `${i * 100}ms` }}
-            >
-              {/* Image */}
-              <div className="h-[180px] bg-foreground/5 overflow-hidden">
-                <img
-                  src={cs.image}
-                  alt={cs.title}
-                  className="w-full h-full object-cover opacity-90 group-hover:scale-[1.03] transition-transform duration-400"
-                />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {studies.map((cs, i) => (
+          <a
+            key={cs.title}
+            href="#"
+            className={cn(
+              "group bg-white rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_36px_rgba(11,37,69,0.08)]",
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            )}
+            style={{ transitionDelay: `${i * 100}ms` }}
+          >
+            {/* Image */}
+            <div className="h-[180px] bg-foreground/5 overflow-hidden">
+              <img
+                src={cs.image}
+                alt={cs.title}
+                className="w-full h-full object-cover opacity-90 group-hover:scale-[1.03] transition-transform duration-400"
+              />
+            </div>
+
+            <div className="p-6">
+              <span className="text-[10px] font-bold tracking-[0.12em] uppercase text-secondary">
+                {cs.tag}
+              </span>
+              <h4 className="font-display font-bold text-[15px] text-foreground leading-[1.3] mt-2 mb-2 group-hover:text-secondary transition-colors">
+                {cs.title}
+              </h4>
+
+              {/* Outcome line */}
+              <p className="text-[13px] text-muted-foreground leading-[1.5] mb-4 italic">
+                → {cs.outcome}
+              </p>
+
+              {/* Metrics */}
+              <div className="flex gap-6 pt-4 border-t border-border/50">
+                {cs.metrics.map((m) => (
+                  <div key={m.label}>
+                    <div className="font-display font-extrabold text-[22px] text-foreground leading-none">{m.value}</div>
+                    <div className="text-[11px] text-muted-foreground/60 uppercase tracking-wide mt-1">{m.label}</div>
+                  </div>
+                ))}
               </div>
-
-              <div className="p-6">
-                <span className="text-[10px] font-bold tracking-[0.12em] uppercase text-secondary">
-                  {cs.tag}
-                </span>
-                <h4 className="font-display font-bold text-[15px] text-foreground leading-[1.3] mt-2 mb-2 group-hover:text-secondary transition-colors">
-                  {cs.title}
-                </h4>
-
-                {/* Outcome line */}
-                <p className="text-[13px] text-muted-foreground leading-[1.5] mb-4 italic">
-                  → {cs.outcome}
-                </p>
-
-                {/* Metrics */}
-                <div className="flex gap-6 pt-4 border-t border-border/50">
-                  {cs.metrics.map((m) => (
-                    <div key={m.label}>
-                      <div className="font-display font-extrabold text-[22px] text-foreground leading-none">{m.value}</div>
-                      <div className="text-[11px] text-muted-foreground/60 uppercase tracking-wide mt-1">{m.label}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
+            </div>
+          </a>
+        ))}
       </div>
     </section>
   )
@@ -545,28 +535,26 @@ function FinalCTA() {
   const { ref, visible } = useReveal()
 
   return (
-    <section ref={ref as React.RefObject<HTMLElement>} className="px-6 lg:px-12 py-16 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div
-          className={cn(
-            "bg-secondary rounded-2xl px-8 lg:px-12 py-10 flex flex-col lg:flex-row items-center justify-between gap-6 transition-all duration-700",
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          )}
-        >
-          <div>
-            <h3 className="font-display font-bold text-[24px] text-white leading-[1.25] mb-1.5">
-              Strengthen Your Aerospace Supply Chain
-            </h3>
-            <p className="text-[14px] text-white/70">Connect with our aerospace logistics specialists — they speak your language.</p>
-          </div>
-          <div className="flex items-center gap-3 flex-shrink-0">
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 bg-white text-foreground font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-white/90 transition-all"
-            >
-              Talk to an Expert
-            </a>
-          </div>
+    <section ref={ref as React.RefObject<HTMLElement>} className="bg-foreground pt-12 lg:pt-16">
+      <div
+        className={cn(
+          "bg-secondary rounded-t-2xl px-8 lg:px-12 py-12 lg:py-14 flex flex-col lg:flex-row items-center justify-between gap-6 transition-all duration-700",
+          visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+        )}
+      >
+        <div>
+          <h3 className="font-display font-bold text-[24px] text-white leading-[1.25] mb-1.5">
+            Strengthen Your Aerospace Supply Chain
+          </h3>
+          <p className="text-[14px] text-white/70">Connect with our aerospace logistics specialists — they speak your language.</p>
+        </div>
+        <div className="flex items-center gap-3 flex-shrink-0">
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 bg-white text-foreground font-semibold text-sm px-7 py-3.5 rounded-lg hover:bg-white/90 transition-all"
+          >
+            Talk to an Expert
+          </a>
         </div>
       </div>
     </section>
