@@ -7,6 +7,7 @@ import { LocationPage } from "./pages/LocationPage"
 import { SolutionsLanding } from "./pages/SolutionsLanding"
 import { SolutionPage } from "./pages/SolutionPage"
 import { HomePageV2 } from "./pages/HomePageV2"
+import { AerospacePageV2 } from "./pages/AerospacePageV2"
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/solutions" element={<SolutionsLanding />} />
         <Route path="/solutions/:slug" element={<SolutionPage />} />
         <Route path="/v2" element={<HomePageV2 />} />
+        <Route path="/v2/aerospace" element={<AerospacePageV2 />} />
       </Routes>
     </BrowserRouter>
   )
