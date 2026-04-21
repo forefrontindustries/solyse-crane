@@ -34,25 +34,91 @@ const industryItems = [
   { title: "Mining", href: "/industries/mining", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> },
 ]
 
-const knowledgeCenterItems = [
-  { title: "Market Update", href: "/knowledge-center/market-update/" },
-  { title: "Industry Insight News", href: "/knowledge-center/latest-news-and-info/" },
-  { title: "Trade Advisory Notices", href: "/knowledge-center/trade-advisory-notices/" },
-  { title: "Case Studies", href: "/knowledge-center/case-studies/" },
-  { title: "Podcast", href: "/knowledge-center/podcast/" },
-  { title: "Incoterms\u00AE Guide", href: "/knowledge-center/incoterms/" },
-  { title: "Press Center", href: "/knowledge-center/press-center/" },
+const technologyItems = [
+  { title: "C-View Platform", description: "End-to-end supply chain visibility portal", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg> },
+  { title: "Supply Chain Visibility", description: "Real-time tracking, alerts, and predictive ETAs", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg> },
+  { title: "Business Intelligence", description: "Custom reporting and analytics dashboards", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg> },
+  { title: "EDI & API Integrations", description: "Seamless system-to-system connectivity", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg> },
+  { title: "Transportation Management", description: "Optimize routing, carriers, and cost", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" opacity=".3"/></svg> },
+  { title: "Warehouse Management", description: "Inventory control and order fulfillment", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> },
 ]
+
+const aboutItems = [
+  { title: "Our Story", description: "How Crane Worldwide was built", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg> },
+  { title: "Leadership", description: "Meet our executive team", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg> },
+  { title: "Sustainability", description: "Our commitment to responsible logistics", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg> },
+  { title: "Careers", description: "Join our global team", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="12.01"/></svg> },
+  { title: "Partners & Agents", description: "Our global network of trusted partners", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg> },
+  { title: "Compliance & Certifications", description: "ITAR, C-TPAT, AEO and more", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> },
+]
+
+const insightsItems = [
+  { title: "Market Update", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> },
+  { title: "Industry Insight News", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg> },
+  { title: "Trade Advisory Notices", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> },
+  { title: "Case Studies", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> },
+  { title: "Podcast", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg> },
+  { title: "Incoterms\u00AE Guide", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> },
+  { title: "Press Center", href: "#", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2"/></svg> },
+]
+
+/* ─── Reusable mega‑menu panel ─── */
+function MegaPanel({ items, columns, wide, showViewAll, viewAllHref, viewAllLabel, onClose }: {
+  items: { title: string; description?: string; href: string; icon: JSX.Element }[]
+  columns: 2 | 3
+  wide?: boolean
+  showViewAll?: boolean
+  viewAllHref?: string
+  viewAllLabel?: string
+  onClose: () => void
+}) {
+  const w = wide ? "w-[720px]" : columns === 3 ? "w-[660px]" : "w-[460px]"
+  const cols = columns === 3 ? "grid-cols-3" : "grid-cols-2"
+  const hasDesc = items.some((i) => i.description)
+
+  return (
+    <div className={`bg-white rounded-xl shadow-[0_20px_60px_rgba(11,37,69,0.16)] border border-border/50 p-4 ${w} max-h-[72vh] overflow-y-auto`}>
+      <div className={`grid ${cols} gap-1`}>
+        {items.map((item) => (
+          <Link
+            key={item.title}
+            to={item.href}
+            onClick={onClose}
+            className="flex items-start gap-3 rounded-lg p-3 hover:bg-[#f4f6f9] transition-colors group"
+          >
+            <div className="w-9 h-9 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
+              {item.icon}
+            </div>
+            <div className="min-w-0">
+              <div className="text-[13px] font-semibold text-foreground leading-tight">{item.title}</div>
+              {hasDesc && item.description && (
+                <p className="text-[11px] text-muted-foreground mt-0.5 leading-snug">{item.description}</p>
+              )}
+            </div>
+          </Link>
+        ))}
+      </div>
+      {showViewAll && viewAllHref && (
+        <Link
+          to={viewAllHref}
+          onClick={onClose}
+          className={`flex items-center justify-center gap-2 mt-2 pt-3 border-t border-border/50 text-[13px] font-semibold text-secondary hover:text-secondary/80 transition-colors ${columns === 3 ? "col-span-3" : ""}`}
+        >
+          {viewAllLabel || "View All"} →
+        </Link>
+      )}
+    </div>
+  )
+}
 
 export function Header() {
   const location = useLocation()
-  const isHome = location.pathname === "/"
+  const isHome = location.pathname === "/" || location.pathname === "/v2"
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openMenu, setOpenMenu] = useState<string | null>(null)
   const [mobileSection, setMobileSection] = useState<string | null>(null)
 
-  // On interior pages, always show the solid nav
   const solid = !isHome || isScrolled
 
   useEffect(() => {
@@ -60,6 +126,18 @@ export function Header() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const closeMenu = () => setOpenMenu(null)
+
+  const navBtn = (label: string, key: string) => (
+    <button className={cn(
+      "flex items-center gap-1.5 h-10 px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md cursor-pointer",
+      solid ? "text-foreground hover:bg-muted" : "text-white hover:text-white/80"
+    )}>
+      {label}
+      <svg className={cn("h-3 w-3 transition-transform duration-200", openMenu === key && "rotate-180")} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+    </button>
+  )
 
   return (
     <header
@@ -83,7 +161,6 @@ export function Header() {
             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
             +1 888-870-2726
           </a>
-
           <a href="#" className={cn(
             "flex items-center gap-2 transition-colors duration-300",
             solid ? "text-muted-foreground hover:text-foreground" : "text-white/80 hover:text-white"
@@ -103,106 +180,94 @@ export function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-2">
-            {/* Services dropdown */}
+          {/* ─── Desktop Navigation ─── */}
+          <div className="hidden lg:flex items-center gap-1">
+
+            {/* Services */}
             <div className="relative" onMouseEnter={() => setOpenMenu("services")} onMouseLeave={() => setOpenMenu(null)}>
-              <button className={cn(
-                "flex items-center gap-1.5 h-10 px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md cursor-pointer",
-                solid ? "text-foreground hover:bg-muted" : "text-white hover:text-white/80"
-              )}>
-                Services
-                <svg className={cn("h-3 w-3 transition-transform duration-200", openMenu === "services" && "rotate-180")} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-              </button>
+              {navBtn("Services", "services")}
               {openMenu === "services" && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50">
-                  <div className="bg-white rounded-lg shadow-[0_16px_48px_rgba(11,37,69,0.14)] border border-border/50 p-5 w-[720px] grid grid-cols-3 gap-1.5 max-h-[70vh] overflow-y-auto">
-                    {serviceItems.map((s) => (
-                      <Link key={s.title} to={s.href} onClick={() => setOpenMenu(null)} className="flex items-start gap-3.5 rounded-lg p-3.5 hover:bg-[#f4f6f9] transition-colors group">
-                        <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-                          {s.icon}
-                        </div>
-                        <div>
-                          <div className="text-[13px] font-semibold text-foreground">{s.title}</div>
-                          <p className="text-xs text-muted-foreground mt-0.5 leading-snug">{s.description}</p>
-                        </div>
-                      </Link>
-                    ))}
-                    <Link to="/solutions" className="flex items-center justify-center gap-2 mt-2 pt-3 border-t border-border/50 text-[13px] font-semibold text-secondary hover:text-secondary/80 transition-colors col-span-3" onClick={() => setOpenMenu(null)}>
-                      View All Services →
-                    </Link>
-                  </div>
+                  <MegaPanel
+                    items={serviceItems}
+                    columns={3}
+                    wide
+                    showViewAll
+                    viewAllHref="/solutions"
+                    viewAllLabel="View All Services"
+                    onClose={closeMenu}
+                  />
                 </div>
               )}
             </div>
 
-            {/* Industries dropdown */}
+            {/* Industries */}
             <div className="relative" onMouseEnter={() => setOpenMenu("industries")} onMouseLeave={() => setOpenMenu(null)}>
-              <button className={cn(
-                "flex items-center gap-1.5 h-10 px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md cursor-pointer",
-                solid ? "text-foreground hover:bg-muted" : "text-white hover:text-white/80"
-              )}>
-                Industries
-                <svg className={cn("h-3 w-3 transition-transform duration-200", openMenu === "industries" && "rotate-180")} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-              </button>
+              {navBtn("Industries", "industries")}
               {openMenu === "industries" && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50">
-                  <div className="bg-white rounded-lg shadow-[0_16px_48px_rgba(11,37,69,0.14)] border border-border/50 p-4 w-[380px]">
-                    {industryItems.map((ind) => (
-                      <Link key={ind.title} to={ind.href} className="flex items-center gap-3.5 rounded-lg px-3.5 py-3 hover:bg-[#f4f6f9] transition-colors group" onClick={() => setOpenMenu(null)}>
-                        <div className="w-9 h-9 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-                          {ind.icon}
-                        </div>
-                        <span className="text-[13px] font-medium text-foreground">{ind.title}</span>
-                      </Link>
-                    ))}
-                    <Link to="/industries" className="flex items-center justify-center gap-2 mt-2 pt-3 border-t border-border/50 text-[13px] font-semibold text-secondary hover:text-secondary/80 transition-colors" onClick={() => setOpenMenu(null)}>
-                      View All Industries →
-                    </Link>
-                  </div>
+                  <MegaPanel
+                    items={industryItems}
+                    columns={2}
+                    showViewAll
+                    viewAllHref="/industries"
+                    viewAllLabel="View All Industries"
+                    onClose={closeMenu}
+                  />
                 </div>
               )}
             </div>
 
-            <a href="#technology" className={cn(
-              "h-10 px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md inline-flex items-center",
-              solid ? "text-foreground hover:bg-muted" : "text-white hover:text-white/80"
-            )}>Technology</a>
+            {/* Technology */}
+            <div className="relative" onMouseEnter={() => setOpenMenu("technology")} onMouseLeave={() => setOpenMenu(null)}>
+              {navBtn("Technology", "technology")}
+              {openMenu === "technology" && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50">
+                  <MegaPanel
+                    items={technologyItems}
+                    columns={2}
+                    onClose={closeMenu}
+                  />
+                </div>
+              )}
+            </div>
 
+            {/* About */}
+            <div className="relative" onMouseEnter={() => setOpenMenu("about")} onMouseLeave={() => setOpenMenu(null)}>
+              {navBtn("About", "about")}
+              {openMenu === "about" && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50">
+                  <MegaPanel
+                    items={aboutItems}
+                    columns={2}
+                    onClose={closeMenu}
+                  />
+                </div>
+              )}
+            </div>
+
+            {/* Insights */}
+            <div className="relative" onMouseEnter={() => setOpenMenu("insights")} onMouseLeave={() => setOpenMenu(null)}>
+              {navBtn("Insights", "insights")}
+              {openMenu === "insights" && (
+                <div className="absolute top-full right-0 pt-3 z-50">
+                  <MegaPanel
+                    items={insightsItems}
+                    columns={2}
+                    onClose={closeMenu}
+                  />
+                </div>
+              )}
+            </div>
+
+            {/* Locations — plain link */}
             <Link to="/locations" className={cn(
               "h-10 px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md inline-flex items-center",
               solid ? "text-foreground hover:bg-muted" : "text-white hover:text-white/80"
             )}>Locations</Link>
 
-            <a href="#about" className={cn(
-              "h-10 px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md inline-flex items-center",
-              solid ? "text-foreground hover:bg-muted" : "text-white hover:text-white/80"
-            )}>About</a>
-
-            {/* Knowledge Center dropdown */}
-            <div className="relative" onMouseEnter={() => setOpenMenu("knowledge")} onMouseLeave={() => setOpenMenu(null)}>
-              <button className={cn(
-                "flex items-center gap-1.5 h-10 px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-md cursor-pointer",
-                solid ? "text-foreground hover:bg-muted" : "text-white hover:text-white/80"
-              )}>
-                Insights
-                <svg className={cn("h-3 w-3 transition-transform duration-200", openMenu === "knowledge" && "rotate-180")} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-              </button>
-              {openMenu === "knowledge" && (
-                <div className="absolute top-full right-0 pt-3 z-50">
-                  <div className="bg-white rounded-lg shadow-[0_16px_48px_rgba(11,37,69,0.14)] border border-border/50 p-3 w-[260px]">
-                    {knowledgeCenterItems.map((item) => (
-                      <a key={item.title} href={item.href} className="block rounded-lg px-4 py-2.5 text-[13px] font-medium text-foreground hover:bg-[#f4f6f9] transition-colors">
-                        {item.title}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
             {/* CTAs */}
-            <div className="flex items-center gap-3 ml-8 pl-8 border-l transition-colors duration-300" style={{ borderColor: solid ? "var(--color-border, #e5e7eb)" : "rgba(255,255,255,0.2)" }}>
+            <div className="flex items-center gap-3 ml-6 pl-6 border-l transition-colors duration-300" style={{ borderColor: solid ? "var(--color-border, #e5e7eb)" : "rgba(255,255,255,0.2)" }}>
               <a href="https://webtracker.craneww.com/" className={cn(
                 "h-10 px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 inline-flex items-center border",
                 solid
@@ -228,72 +293,46 @@ export function Header() {
         </nav>
       </div>
 
-      {/* Mobile menu */}
+      {/* ─── Mobile menu ─── */}
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-border shadow-xl">
           <nav className="flex flex-col gap-1 p-6 max-h-[80vh] overflow-y-auto">
-            {/* Services accordion */}
-            <button
-              onClick={() => setMobileSection(mobileSection === "services" ? null : "services")}
-              className="flex items-center justify-between w-full py-2.5 text-sm font-semibold text-foreground cursor-pointer"
-            >
-              Services
-              <svg className={cn("h-4 w-4 text-muted-foreground transition-transform duration-200", mobileSection === "services" && "rotate-180")} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-            </button>
-            {mobileSection === "services" && (
-              <div className="flex flex-col gap-0.5 pl-1 pb-2">
-                {serviceItems.map((s) => (
-                  <Link key={s.title} to={s.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-3 py-2.5 pl-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    <span className="text-secondary">{s.icon}</span>
-                    {s.title}
-                  </Link>
-                ))}
-                <Link to="/solutions" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 py-2.5 pl-1 text-sm font-semibold text-secondary hover:text-secondary/80 transition-colors">
-                  View All Services →
-                </Link>
+            {/* Mobile accordion helper */}
+            {([
+              { key: "services", label: "Services", items: serviceItems, hasDesc: true },
+              { key: "industries", label: "Industries", items: industryItems, hasDesc: false },
+              { key: "technology", label: "Technology", items: technologyItems, hasDesc: true },
+              { key: "about", label: "About", items: aboutItems, hasDesc: true },
+              { key: "insights", label: "Insights", items: insightsItems, hasDesc: false },
+            ] as const).map(({ key, label, items, hasDesc }) => (
+              <div key={key}>
+                <button
+                  onClick={() => setMobileSection(mobileSection === key ? null : key)}
+                  className="flex items-center justify-between w-full py-2.5 text-sm font-semibold text-foreground cursor-pointer"
+                >
+                  {label}
+                  <svg className={cn("h-4 w-4 text-muted-foreground transition-transform duration-200", mobileSection === key && "rotate-180")} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+                {mobileSection === key && (
+                  <div className="flex flex-col gap-0.5 pl-1 pb-2">
+                    {items.map((item) => (
+                      <Link key={item.title} to={item.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-3 py-2.5 pl-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
+                        <span className="text-secondary">{item.icon}</span>
+                        <div>
+                          <span>{item.title}</span>
+                          {hasDesc && 'description' in item && (item as any).description && (
+                            <p className="text-[11px] text-muted-foreground/70 leading-tight">{(item as any).description}</p>
+                          )}
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
-            )}
+            ))}
 
-            {/* Industries accordion */}
-            <button
-              onClick={() => setMobileSection(mobileSection === "industries" ? null : "industries")}
-              className="flex items-center justify-between w-full py-2.5 text-sm font-semibold text-foreground cursor-pointer"
-            >
-              Industries
-              <svg className={cn("h-4 w-4 text-muted-foreground transition-transform duration-200", mobileSection === "industries" && "rotate-180")} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-            </button>
-            {mobileSection === "industries" && (
-              <div className="flex flex-col gap-0.5 pl-1 pb-2">
-                {industryItems.map((ind) => (
-                  <Link key={ind.title} to={ind.href} onClick={() => setMobileOpen(false)} className="flex items-center gap-3 py-2.5 pl-1 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    <span className="text-secondary">{ind.icon}</span>
-                    {ind.title}
-                  </Link>
-                ))}
-              </div>
-            )}
-
-            {/* Knowledge Center accordion */}
-            <button
-              onClick={() => setMobileSection(mobileSection === "knowledge" ? null : "knowledge")}
-              className="flex items-center justify-between w-full py-2.5 text-sm font-semibold text-foreground cursor-pointer"
-            >
-              Insights
-              <svg className={cn("h-4 w-4 text-muted-foreground transition-transform duration-200", mobileSection === "knowledge" && "rotate-180")} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-            </button>
-            {mobileSection === "knowledge" && (
-              <div className="flex flex-col gap-0.5 pl-1 pb-2">
-                {knowledgeCenterItems.map((item) => (
-                  <a key={item.title} href={item.href} onClick={() => setMobileOpen(false)} className="py-2.5 pl-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    {item.title}
-                  </a>
-                ))}
-              </div>
-            )}
-
-            <a href="#technology" onClick={() => setMobileOpen(false)} className="py-2.5 text-sm font-semibold">Technology</a>
             <Link to="/locations" onClick={() => setMobileOpen(false)} className="py-2.5 text-sm font-semibold">Locations</Link>
-            <a href="#about" onClick={() => setMobileOpen(false)} className="py-2.5 text-sm font-semibold">About</a>
+
             <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border">
               <a href="https://webtracker.craneww.com/" className="w-full py-2.5 text-sm font-medium border border-border rounded-lg text-center">Track Shipment</a>
               <a href="#cta" className="w-full py-2.5 text-sm font-semibold text-center bg-secondary text-white rounded-lg">Get a Quote</a>

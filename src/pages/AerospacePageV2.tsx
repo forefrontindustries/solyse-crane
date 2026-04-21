@@ -535,10 +535,10 @@ function FinalCTA() {
   const { ref, visible } = useReveal()
 
   return (
-    <section ref={ref as React.RefObject<HTMLElement>} className="bg-foreground pt-12 lg:pt-16">
+    <section ref={ref as React.RefObject<HTMLElement>} className="bg-foreground">
       <div
         className={cn(
-          "bg-secondary rounded-t-2xl px-8 lg:px-12 py-12 lg:py-14 flex flex-col lg:flex-row items-center justify-between gap-6 transition-all duration-700",
+          "bg-secondary px-8 lg:px-12 py-12 lg:py-14 flex flex-col lg:flex-row items-center justify-between gap-6 transition-all duration-700",
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         )}
       >
