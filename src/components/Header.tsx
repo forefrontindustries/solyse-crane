@@ -72,19 +72,19 @@ function MegaPanel({ items, columns, wide, showViewAll, viewAllHref, viewAllLabe
   viewAllLabel?: string
   onClose: () => void
 }) {
-  const w = wide ? "w-[720px]" : columns === 3 ? "w-[660px]" : "w-[460px]"
+  const w = wide ? "w-[780px]" : columns === 3 ? "w-[720px]" : "w-[500px]"
   const cols = columns === 3 ? "grid-cols-3" : "grid-cols-2"
   const hasDesc = items.some((i) => i.description)
 
   return (
-    <div className={`bg-white rounded-xl shadow-[0_20px_60px_rgba(11,37,69,0.16)] border border-border/50 p-4 ${w} max-h-[72vh] overflow-y-auto`}>
-      <div className={`grid ${cols} gap-1`}>
+    <div className={`bg-white rounded-xl shadow-[0_20px_60px_rgba(11,37,69,0.16)] border border-border/50 p-6 ${w} max-h-[72vh] overflow-y-auto`}>
+      <div className={`grid ${cols} gap-1.5`}>
         {items.map((item) => (
           <Link
             key={item.title}
             to={item.href}
             onClick={onClose}
-            className="flex items-start gap-3 rounded-lg p-3 hover:bg-[#f4f6f9] transition-colors group"
+            className="flex items-start gap-3.5 rounded-lg p-3.5 hover:bg-[#f4f6f9] transition-colors group"
           >
             <div className="w-9 h-9 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0 text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
               {item.icon}
@@ -102,7 +102,7 @@ function MegaPanel({ items, columns, wide, showViewAll, viewAllHref, viewAllLabe
         <Link
           to={viewAllHref}
           onClick={onClose}
-          className={`flex items-center justify-center gap-2 mt-2 pt-3 border-t border-border/50 text-[13px] font-semibold text-secondary hover:text-secondary/80 transition-colors ${columns === 3 ? "col-span-3" : ""}`}
+          className={`flex items-center justify-center gap-2 mt-3 pt-4 border-t border-border/50 text-[13px] font-semibold text-secondary hover:text-secondary/80 transition-colors ${columns === 3 ? "col-span-3" : ""}`}
         >
           {viewAllLabel || "View All"} →
         </Link>
@@ -236,7 +236,7 @@ export function Header() {
             <div className="relative" onMouseEnter={() => setOpenMenu("about")} onMouseLeave={() => setOpenMenu(null)}>
               {navBtn("About", "about")}
               {openMenu === "about" && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50">
+                <div className="absolute top-full right-0 pt-3 z-50">
                   <MegaPanel
                     items={aboutItems}
                     columns={2}
