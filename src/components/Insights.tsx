@@ -48,17 +48,14 @@ export function Insights() {
       className="relative bg-[#f4f6f9] overflow-hidden py-24 px-6 lg:px-12"
     >
       {/* Header */}
-      <div className={`flex justify-between items-end mb-12 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+      <div className={`max-w-[90rem] mx-auto flex justify-between items-end mb-12 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div>
-          <div className="flex items-center gap-2.5 mb-3">
-            <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
-            <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
-              Knowledge Center
-            </span>
-          </div>
-          <h2 className="font-display font-extrabold text-[clamp(30px,4.2vw,54px)] leading-[1.06] text-foreground tracking-tight">
-            Industry Insights
+          <h2 className="text-3xl lg:text-4xl font-bold text-foreground tracking-tight">
+            Insights &amp; Market Updates
           </h2>
+          <p className="mt-3 text-lg text-muted-foreground max-w-xl">
+            Industry intelligence to keep your supply chain ahead
+          </p>
         </div>
         <a
           href="#"
@@ -70,7 +67,7 @@ export function Insights() {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-[5fr_3fr_3fr] gap-5">
+      <div className="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-[5fr_3fr_3fr] gap-5">
         {articles.map((article, i) => (
           <a
             key={article.title}

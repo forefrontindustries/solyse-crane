@@ -3,11 +3,11 @@ import { Hero } from "../components/Hero"
 import { QuickAccess } from "../components/QuickAccess"
 import { IndustryEntryA } from "../components/IndustryEntry"
 import { ProofStats } from "../components/ProofStats"
-import { Insights } from "../components/Insights"
 import { Services } from "../components/Services"
 import { Technology } from "../components/Technology"
-import { About } from "../components/About"
+import { WhyCrane } from "../components/WhyCrane"
 import { ProofInPractice } from "../components/ProofInPractice"
+import { Insights } from "../components/Insights"
 import { CTA } from "../components/CTA"
 import { Footer } from "../components/Footer"
 
@@ -19,11 +19,11 @@ export function HomePage() {
       <QuickAccess />
       <IndustryEntryA />
       <ProofStats />
-      <Insights />
       <Services />
       <Technology />
-      <About />
+      <WhyCrane />
       <ProofInPractice />
+      <Insights />
       <CTA />
       <Footer />
     </div>
