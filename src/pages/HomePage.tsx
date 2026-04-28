@@ -1,7 +1,7 @@
 import { Header } from "../components/Header"
 import { Hero } from "../components/Hero"
 import { QuickAccess } from "../components/QuickAccess"
-import { IndustryEntry } from "../components/IndustryEntry"
+import { IndustryEntryA } from "../components/IndustryEntry"
 import { Insights } from "../components/Insights"
 import { Services } from "../components/Services"
 import { Technology } from "../components/Technology"
@@ -16,7 +16,7 @@ export function HomePage() {
       <Header />
       <Hero />
       <QuickAccess />
-      <IndustryEntry />
+      <IndustryEntryA />
       <Insights />
       <Services />
       <Technology />
