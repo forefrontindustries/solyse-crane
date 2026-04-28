@@ -1,29 +1,28 @@
-# Crane Site Task State
+# Task: Locations Page + C-View Page
 
-## Deploy Script
-Always run from `/home/user/crane-site/dist` with `.vercel` linked to `crane-worldwide`:
-```
-cd /home/user/crane-site && npx vite build && cp public/logo-crane.png public/logo-crane-white.png dist/ && echo '{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }' > dist/vercel.json && cd dist && source /home/user/crane-site/.env.local && vercel deploy . --token "$VERCEL_TOKEN" --yes --prod
-```
+## 1. Locations Page (React, replaces static HTML approach)
+- Drop the static `locations-mapbox.html` approach (WebGL issues, external JS deps)
+- Build as React page at `/locations` (already exists as LocationsLanding.tsx)
+- Use a **placeholder map** — static styled image/SVG that looks like the Mapbox world map with dots
+- Match the POC layout: hero with stats, map area with sidebar, filters
+- Use our existing design system (Crane brand)
 
-## Live URL
-https://crane-worldwide.vercel.app
+## 2. C-View Page (new)
+- Route: `/technology/shipment-tracking` or `/c-view`
+- Content from craneww.com/logistics-technology/shipment-tracking/
+- Sections:
+  1. Hero: "C-View | Shipment Tracker" with description
+  2. Intro: "Logistics Technology: Shipment Tracking logistics portal" + image + "Request a C-VIEW Demo" CTA
+  3. "Shipment tracking made easy" expandable section
+  4. "Centralized Shipment Tracker Dashboard" + screenshot
+  5. "Shipment Track & Trace" + screenshot
+  6. "Potential exceptions for supply chain resilience" + screenshot
+  7. "Request a C-View Demo" CTA
+  8. Quote/contact CTA
+  9. Footer
 
-## Industry Pages
-- /industries/aerospace-defense
-- /industries/automotive
-- /industries/energy
-- /industries/healthcare
-- /industries/high-tech
-- /industries/retail
-
-## Completed
-- Header: C-View link, Languages link, phone +1 888-870-2726, Track Shipments in top bar
-- Logo links to homepage via React Router
-- Industry page: minimal design per client feedback
-  - Challenge cards: 2-col grid, clean bg, description text, subpage links
-  - Services: 4 cards with green headers, bullets, learn more
-  - C-View banner
-  - Case studies with metrics
-  - Green CTA bar
-- All industries linked from nav dropdown
+## Status
+- [ ] Build locations page with placeholder map
+- [ ] Build C-View page
+- [ ] Deploy & screenshot
+- [ ] Push to GitHub

@@ -1,0 +1,1910 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.91525,
+          51.19709
+        ]
+      },
+      "properties": {
+        "title": "Calgary, Canada",
+        "phone": "+1 (403) 250 5158",
+        "url": "/locations/canada/calgary/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.382813,
+          33.650803
+        ]
+      },
+      "properties": {
+        "title": "Atlanta (ATL)",
+        "phone": "+1 678 586 2500",
+        "url": "/locations/usa/atlanta/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.12124,
+          42.79049
+        ]
+      },
+      "properties": {
+        "title": "Boston (BOS)",
+        "phone": "+1 617 884 3489",
+        "url": "/locations/usa/boston/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.901833,
+          39.837795
+        ]
+      },
+      "properties": {
+        "title": "Columbus (CMH)",
+        "phone": "+1 614 875 8800",
+        "url": "/locations/usa/columbus/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.01919,
+          32.859568
+        ]
+      },
+      "properties": {
+        "title": "Dallas (DFW)",
+        "phone": "+1 972 428 5600",
+        "url": "/locations/usa/dallas/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.3158,
+          42.22726
+        ]
+      },
+      "properties": {
+        "title": "Detroit (DTW)",
+        "phone": "+1 734 692 5679",
+        "url": "/locations/usa/detroit/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.379069,
+          29.963306
+        ]
+      },
+      "properties": {
+        "title": "Houston (IAH)",
+        "phone": "+1 281 443 2777",
+        "url": "/locations/usa/houston/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.69707,
+          40.65877
+        ]
+      },
+      "properties": {
+        "title": "New York (JFK)",
+        "phone": "+1 516 285 1236",
+        "url": "/locations/usa/new-york-jfk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.37881595592451,
+          25.906530406809267
+        ]
+      },
+      "properties": {
+        "title": "Miami (MIA)",
+        "phone": "+1 305 392 4700",
+        "url": "/locations/usa/miami/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.13409,
+          44.846813
+        ]
+      },
+      "properties": {
+        "title": "Minneapolis (MSP)",
+        "phone": "+1 763 951 8500",
+        "url": "/locations/usa/minneapolis/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.038855,
+          41.983126
+        ]
+      },
+      "properties": {
+        "title": "Chicago (ORD)",
+        "phone": "+1 630 477 9100",
+        "url": "/locations/usa/chicago/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.79170707393669,
+          33.26575956119199
+        ]
+      },
+      "properties": {
+        "title": "Phoenix (PHX)",
+        "phone": "1-480-210-5019",
+        "url": "/locations/usa/phoenix/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.252937,
+          47.229031
+        ]
+      },
+      "properties": {
+        "title": "Seattle, WA (SEA)",
+        "phone": "+1 206 659 4111",
+        "url": "/locations/usa/seattle/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.107496,
+          37.622812
+        ]
+      },
+      "properties": {
+        "title": "San Francisco (SFO)",
+        "phone": "+1 510 606 9199",
+        "url": "/locations/usa/san-francisco/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.918051,
+          -12.474572
+        ]
+      },
+      "properties": {
+        "title": "Darwin, Australia",
+        "phone": "+ 61 8 9353 6611",
+        "url": "/locations/australia/darwin/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.07654,
+          -27.66909
+        ]
+      },
+      "properties": {
+        "title": "Brisbane, Australia",
+        "phone": "+61 0420 322 539",
+        "url": "/locations/australia/brisbane/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.988392,
+          49.16445
+        ]
+      },
+      "properties": {
+        "title": "Vancouver, Canada",
+        "phone": "+1 (604) 231 9896",
+        "url": "/locations/canada/vancouver/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.7675,
+          -20.750601
+        ]
+      },
+      "properties": {
+        "title": "Karratha, Australia",
+        "phone": "+61 8 9353 6611",
+        "url": "/locations/australia/karratha/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.85531,
+          -37.70618
+        ]
+      },
+      "properties": {
+        "title": "Melbourne, Australia",
+        "phone": "+61 3 9338 5733",
+        "url": "/locations/australia/melbourne/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6904,
+          43.646287
+        ]
+      },
+      "properties": {
+        "title": "Toronto, Canada",
+        "phone": "+1 (905) 564 6465",
+        "url": "/locations/canada/toronto/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.957055,
+          -31.9827
+        ]
+      },
+      "properties": {
+        "title": "Perth, Australia",
+        "phone": "+61 8 9353 6611",
+        "url": "/locations/australia/perth/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.943529,
+          4.888047
+        ]
+      },
+      "properties": {
+        "title": "Bandar Seri Begawan, Brunei",
+        "phone": "+673 223 0041",
+        "url": "/locations/brunei/brunei/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.783286,
+          -6.242726
+        ]
+      },
+      "properties": {
+        "title": "Jakarta, Indonesia",
+        "phone": "+62 21 2903 6550",
+        "url": "/locations/indonesia/jakarta/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.73851,
+          -7.26098
+        ]
+      },
+      "properties": {
+        "title": "Surabaya, Indonesia",
+        "phone": "+6231 6000 3408",
+        "url": "/locations/indonesia/surabaya/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.879933,
+          37.547773
+        ]
+      },
+      "properties": {
+        "title": "Seoul",
+        "phone": "+82 2 2093 3800",
+        "url": "/locations/korea/incheon/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.7699,
+          35.089158
+        ]
+      },
+      "properties": {
+        "title": "Busan",
+        "phone": "+82 70 4738 4181",
+        "url": "/locations/korea/pusan/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.593268,
+          13.713844
+        ]
+      },
+      "properties": {
+        "title": "Bangkok",
+        "phone": "+66 (2 )0909434",
+        "url": "/locations/thailand/bangkok/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.58454,
+          3.08602
+        ]
+      },
+      "properties": {
+        "title": "Kuala Lumpur",
+        "phone": "+603 5569 8630",
+        "url": "/locations/malaysia/kuala-lumpur/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.236432,
+          5.252617
+        ]
+      },
+      "properties": {
+        "title": "Labuan",
+        "phone": "+603 5569 8630",
+        "url": "/locations/malaysia/labuan/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.366986,
+          -34.61831
+        ]
+      },
+      "properties": {
+        "title": "Freight Forwarder in Buenos Aires",
+        "phone": "+54 11 5368 8200",
+        "url": "/locations/argentina/buenos-aires/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.84459,
+          -32.89547
+        ]
+      },
+      "properties": {
+        "title": "Freight Forwarder in Mendoza",
+        "phone": "+54 911 3376 9765",
+        "url": "/locations/argentina/mendoza/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.01038,
+          -23.479
+        ]
+      },
+      "properties": {
+        "title": "São Paulo, Brazil",
+        "phone": "+55 11 4193-3531",
+        "url": "/locations/brazil/sao-paolo/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.05853,
+          -22.886165
+        ]
+      },
+      "properties": {
+        "title": "Campinas, Brazil",
+        "phone": "+55 19 2519 6608",
+        "url": "/locations/brazil/campinas/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.289942,
+          23.113511
+        ]
+      },
+      "properties": {
+        "title": "Guangzhou",
+        "phone": "+86 755 82714483",
+        "url": "/locations/p.r-china/guangzhou/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.106023,
+          4.659696
+        ]
+      },
+      "properties": {
+        "title": "Freight Forwarder in Bogota",
+        "phone": "+60 1 7430226",
+        "url": "/locations/colombia/bogota/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.938812,
+          28.228209
+        ]
+      },
+      "properties": {
+        "title": "Changsha",
+        "phone": "+86 18692277424",
+        "url": "/locations/p.r-china/changsha/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.37506792645111,
+          20.69415486541977
+        ]
+      },
+      "properties": {
+        "title": "Guadalajara 3PL Global Logistics",
+        "phone": "+52 33 3630 4663",
+        "url": "/locations/mexico/guadalajara/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.167238,
+          19.428203
+        ]
+      },
+      "properties": {
+        "title": "Freight Forwarder in Mexico City",
+        "phone": "Operations +52 55 4615 6558    |    Finance +52 55 4598 9237",
+        "url": "/locations/mexico/mexico-city/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.16977689390244,
+          25.76604969531427
+        ]
+      },
+      "properties": {
+        "title": "Monterrey 3PL Global Logistics",
+        "phone": "+52 81 8332 0326",
+        "url": "/locations/mexico/monterrey/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.079915,
+          24.46012
+        ]
+      },
+      "properties": {
+        "title": "Xiamen",
+        "phone": "+86 13164897652",
+        "url": "/locations/p.r-china/xiamen/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.574271,
+          29.606703
+        ]
+      },
+      "properties": {
+        "title": "Chongqing",
+        "phone": "+86 023 67723520",
+        "url": "/locations/p.r-china/chongqing/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.30968595354958,
+          19.103658523582865
+        ]
+      },
+      "properties": {
+        "title": "Freight Forwarder in Manzanillo",
+        "phone": "+52 314 33 3 6896",
+        "url": "/locations/mexico/manzanillo/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.197527,
+          22.33531
+        ]
+      },
+      "properties": {
+        "title": "Hong Kong",
+        "phone": "+852 37966333",
+        "url": "/locations/p.r-china/hong-kong/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.409623,
+          31.200812
+        ]
+      },
+      "properties": {
+        "title": "Shanghai",
+        "phone": "+86 21 3251 5588",
+        "url": "/locations/p.r-china/shanghai/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.049861,
+          22.536665
+        ]
+      },
+      "properties": {
+        "title": "Shenzhen",
+        "phone": "+86 755 82714483",
+        "url": "/locations/p.r-china/shenzhen/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.353455,
+          36.056534
+        ]
+      },
+      "properties": {
+        "title": "Qingdao",
+        "phone": "05 32 85029850",
+        "url": "/locations/p.r-china/qingdao/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53271,
+          25.05278
+        ]
+      },
+      "properties": {
+        "title": "Taipei",
+        "phone": "",
+        "url": "/locations/taiwan/taipei/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.788645,
+          51.287776
+        ]
+      },
+      "properties": {
+        "title": "Düsseldorf, Germany",
+        "phone": "+49 211 30 23 27 0",
+        "url": "/locations/germany/dusseldorf/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.47953,
+          50.0367
+        ]
+      },
+      "properties": {
+        "title": "Frankfurt, Germany",
+        "phone": "+49 69 87 00 882 0",
+        "url": "/locations/germany/frankfurt/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.022881,
+          53.548131
+        ]
+      },
+      "properties": {
+        "title": "Hamburg, Germany",
+        "phone": "+49 40 2316679 0",
+        "url": "/locations/germany/hamburg/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.87985,
+          19.108387
+        ]
+      },
+      "properties": {
+        "title": "Mumbai, India",
+        "phone": "+91 22 40290777",
+        "url": "/locations/india/mumbai/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.07909,
+          28.47668
+        ]
+      },
+      "properties": {
+        "title": "Delhi, India",
+        "phone": "+91 124 4989777",
+        "url": "/locations/india/delhi/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.77487,
+          18.56659
+        ]
+      },
+      "properties": {
+        "title": "Pune, India",
+        "phone": "+91 20 676 49 777",
+        "url": "/locations/india/pune/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.23825,
+          13.05326
+        ]
+      },
+      "properties": {
+        "title": "Chennai, India",
+        "phone": "+91 44 459 11 777",
+        "url": "/locations/india/chennai/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.281329,
+          53.456894
+        ]
+      },
+      "properties": {
+        "title": "Dublin, Ireland",
+        "phone": "+353 18447326",
+        "url": "/locations/ireland/dublin/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.15805,
+          57.17548
+        ]
+      },
+      "properties": {
+        "title": "Aberdeen",
+        "phone": "+44 1224772200",
+        "url": "/locations/united-kingdom/aberdeen-1/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.32998,
+          51.89603
+        ]
+      },
+      "properties": {
+        "title": "Cork, Ireland",
+        "phone": "+353 21 6024 260",
+        "url": "/locations/ireland/cork/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.889411,
+          52.713306
+        ]
+      },
+      "properties": {
+        "title": "Shannon, Ireland",
+        "phone": "+353 61 718146",
+        "url": "/locations/ireland/shannon/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.41657,
+          51.4686
+        ]
+      },
+      "properties": {
+        "title": "London",
+        "phone": "+44 1784 438800",
+        "url": "/locations/united-kingdom/london-heathrow/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.18087,
+          26.30015
+        ]
+      },
+      "properties": {
+        "title": "Al Khobar",
+        "phone": "+966 13 881 1710",
+        "url": "/locations/kingdom-of-saudi-arabia/saudi-arabia/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.27417,
+          53.3709
+        ]
+      },
+      "properties": {
+        "title": "Manchester",
+        "phone": "+44 161 667 2755",
+        "url": "/locations/united-kingdom/manchester/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.27028,
+          -26.07489
+        ]
+      },
+      "properties": {
+        "title": "Johannesburg",
+        "phone": "+27 87 133 2317",
+        "url": "/locations/south-africa/johannesburg/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.531418,
+          24.373514
+        ]
+      },
+      "properties": {
+        "title": "Abu Dhabi",
+        "phone": "+971 0 2 4957 083",
+        "url": "/locations/united-arab-emirates/abu-dhabi/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.72453,
+          52.2783
+        ]
+      },
+      "properties": {
+        "title": "Amsterdam",
+        "phone": "+31 20 6535058",
+        "url": "/locations/the-netherlands/amsterdam/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.452685,
+          51.877907
+        ]
+      },
+      "properties": {
+        "title": "Rotterdam",
+        "phone": "+31 10 7603400",
+        "url": "/locations/the-netherlands/rotterdam/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.055199,
+          51.589864
+        ]
+      },
+      "properties": {
+        "title": "Tilburg",
+        "phone": "+31 13 7620300",
+        "url": "/locations/the-netherlands/tilburg/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.12129417786604,
+          24.975616060264326
+        ]
+      },
+      "properties": {
+        "title": "Dubai",
+        "phone": "+9714 363 1000",
+        "url": "/locations/united-arab-emirates/dubai2/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.94853,
+          44.40427
+        ]
+      },
+      "properties": {
+        "title": "Genoa",
+        "phone": "+39 010 9919 111",
+        "url": "/locations/italy/genova/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.29825,
+          45.49737
+        ]
+      },
+      "properties": {
+        "title": "Milan",
+        "phone": "+39 02 9268101",
+        "url": "/locations/italy/milan/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.91056,
+          45.40967
+        ]
+      },
+      "properties": {
+        "title": "Padova",
+        "phone": "+39 049/9816999",
+        "url": "/locations/italy/padova/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -43.17273,
+          -22.91042
+        ]
+      },
+      "properties": {
+        "title": "Rio de Janeiro, Brazil",
+        "phone": "+55 21 3554-1820",
+        "url": "/locations/brazil/rio-de-janeiro/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.77771,
+          39.77105
+        ]
+      },
+      "properties": {
+        "title": "Denver (DEN)",
+        "phone": "+1 720 603 0000",
+        "url": "/locations/usa/denver/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.157595,
+          33.99694
+        ]
+      },
+      "properties": {
+        "title": "Los Angeles (LAX)",
+        "phone": "+1 310 765 2300",
+        "url": "/locations/usa/los-angeles/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.749286,
+          35.673533
+        ]
+      },
+      "properties": {
+        "title": "Tokyo",
+        "phone": "+81 (3) 4571 1049",
+        "url": "/locations/japan/tokyo/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.66752,
+          10.80429
+        ]
+      },
+      "properties": {
+        "title": "Ho Chi Minh",
+        "phone": "+84 28 5678 3979",
+        "url": "/locations/vietnam/ho-chi-minh/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.94141,
+          1.35575
+        ]
+      },
+      "properties": {
+        "title": "Singapore",
+        "phone": "+65 65426055",
+        "url": "/locations/singapore/singapore/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.842369,
+          -1.2766
+        ]
+      },
+      "properties": {
+        "title": "Balikpapan, Indonesia",
+        "phone": "+62 542-886-3491",
+        "url": "/locations/indonesia/balikpapan/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.036501,
+          1.09571
+        ]
+      },
+      "properties": {
+        "title": "Batam, Indonesia",
+        "phone": "+62 778 4890628",
+        "url": "/locations/indonesia/batam/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.188373,
+          22.306233
+        ]
+      },
+      "properties": {
+        "title": "Vadodara, India",
+        "phone": "+91 265 2355777",
+        "url": "/locations/india/vadadora/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.59264,
+          13.05928
+        ]
+      },
+      "properties": {
+        "title": "Bangalore, India",
+        "phone": "",
+        "url": "/locations/india/bangalore/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.509268,
+          23.014997
+        ]
+      },
+      "properties": {
+        "title": "Ahmedabad, India",
+        "phone": "",
+        "url": "/locations/india/ahmedabad/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.9725,
+          35.0896
+        ]
+      },
+      "properties": {
+        "title": "Charlotte (CLT)",
+        "phone": "+1 704 499 6123",
+        "url": "/locations/usa/charlotte/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.18391,
+          32.18119
+        ]
+      },
+      "properties": {
+        "title": "Savannah (SAV)",
+        "phone": "+1 912 244 4541",
+        "url": "/locations/usa/savannah/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.461095,
+          50.90914
+        ]
+      },
+      "properties": {
+        "title": "Brussels",
+        "phone": "+32 492 395568",
+        "url": "/locations/belgium/brussels/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.1596,
+          6.81406
+        ]
+      },
+      "properties": {
+        "title": "Georgetown, Guyana",
+        "phone": "+592 502 0697",
+        "url": "/locations/guyana/georgetown/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -106.23456,
+          31.65559
+        ]
+      },
+      "properties": {
+        "title": "El Paso (ELP)",
+        "phone": "+1 915 859 4810",
+        "url": "/locations/usa/el-paso-elp/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.45099666048965,
+          27.55158139530634
+        ]
+      },
+      "properties": {
+        "title": "Laredo (LRD)",
+        "phone": "+1 956 625 3550",
+        "url": "/locations/usa/laredo/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.70768,
+          33.98274
+        ]
+      },
+      "properties": {
+        "title": "Chino (ONT)",
+        "phone": "+1 909 490 5804",
+        "url": "/locations/usa/chino-ont/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.67238,
+          20.86176
+        ]
+      },
+      "properties": {
+        "title": "Hai Phong",
+        "phone": "+84 28 5678 3979",
+        "url": "/locations/vietnam/hai-phong/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.78407,
+          21.02892
+        ]
+      },
+      "properties": {
+        "title": "Hanoi",
+        "phone": "+84 28 5678 3979",
+        "url": "/locations/vietnam/hanoi/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.21483,
+          16.08658
+        ]
+      },
+      "properties": {
+        "title": "Da Nang",
+        "phone": "+84 28 5678 3979",
+        "url": "/locations/vietnam/da-nang/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.653542,
+          13.95511
+        ]
+      },
+      "properties": {
+        "title": "Ranong",
+        "phone": "+6681 815 8442",
+        "url": "/locations/thailand/ranong/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.9498,
+          13.15888
+        ]
+      },
+      "properties": {
+        "title": "LeamChaBang",
+        "phone": "+66 087 494 5656",
+        "url": "/locations/thailand/leamchabang/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.68444,
+          39.2851
+        ]
+      },
+      "properties": {
+        "title": "Kansas City (MCI)",
+        "phone": "+1 816 891 9000",
+        "url": "/locations/usa/kansas/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.02076,
+          41.20669
+        ]
+      },
+      "properties": {
+        "title": "Omaha (OMA)",
+        "phone": "+1 402 573 5498",
+        "url": "/locations/usa/omaha/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.39019,
+          36.03796
+        ]
+      },
+      "properties": {
+        "title": "Nashville (BNA)",
+        "phone": "+1 888 870 2726",
+        "url": "/locations/usa/nashville/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.50727,
+          25.32083
+        ]
+      },
+      "properties": {
+        "title": "Doha",
+        "phone": "+974-44336181",
+        "url": "/locations/qatar/doha/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.60953,
+          52.18564
+        ]
+      },
+      "properties": {
+        "title": "Birmingham - Midlands",
+        "phone": "+44 1789 532 240",
+        "url": "/locations/united-kingdom/midlands/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.5083520121003,
+          40.3416911945226
+        ]
+      },
+      "properties": {
+        "title": "New Jersey (EWR)",
+        "phone": "+1 862 288 1525",
+        "url": "/locations/usa/new-jersey/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.69087841105357,
+          39.07252969849694
+        ]
+      },
+      "properties": {
+        "title": "Cincinnati (CVG)",
+        "phone": "+1 859 869 8902",
+        "url": "/locations/usa/cincinnati/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.51754,
+          -34.84002
+        ]
+      },
+      "properties": {
+        "title": "Adelaide, Australia",
+        "phone": "",
+        "url": "/locations/australia/adelaide/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.41570883345614,
+          28.454959252988218
+        ]
+      },
+      "properties": {
+        "title": "Orlando (MCO)",
+        "phone": "+1 407 850 5550",
+        "url": "/locations/usa/orlando/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.71872658496764,
+          40.01296880646677
+        ]
+      },
+      "properties": {
+        "title": "York (THV)",
+        "phone": "+1 717 268 4760",
+        "url": "/locations/usa/york/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.383952809798,
+          29.438874844556068
+        ]
+      },
+      "properties": {
+        "title": "San Antonio (SAT)",
+        "phone": "+1 210 951 5607",
+        "url": "/locations/usa/san-antonio/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.68700527168975,
+          24.77563441681961
+        ]
+      },
+      "properties": {
+        "title": "Riyadh",
+        "phone": "+966 11 5062106",
+        "url": "/locations/kingdom-of-saudi-arabia/riyadh/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.871213,
+          21.973164
+        ]
+      },
+      "properties": {
+        "title": "Freight Forwarder in San Luis Potosi",
+        "phone": "+52 44 4407 0353",
+        "url": "/locations/mexico/san-luis-potosi/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5369273,
+          10.4082351
+        ]
+      },
+      "properties": {
+        "title": "Freight Forwarder in Cartagena",
+        "phone": "+60 1 7430226",
+        "url": "/locations/colombia/cartagena/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.0474545,
+          -34.0996625
+        ]
+      },
+      "properties": {
+        "title": "Freight Forwarder in Zárate",
+        "phone": "",
+        "url": "/locations/argentina/zarate/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.30212,
+          41.80562
+        ]
+      },
+      "properties": {
+        "title": "Rome",
+        "phone": "+39 335 6353097",
+        "url": "/locations/italy/rome/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.68116,
+          45.1547
+        ]
+      },
+      "properties": {
+        "title": "Turin",
+        "phone": "+39 011 15633800",
+        "url": "/locations/italy/turin/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.23379,
+          43.80036
+        ]
+      },
+      "properties": {
+        "title": "Florence",
+        "phone": "+39 055 1997 3342",
+        "url": "/locations/italy/florence/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.69660218918662,
+          49.066150737670604
+        ]
+      },
+      "properties": {
+        "title": "Surrey, Canada",
+        "phone": "+1 (604) 231-9896",
+        "url": "/locations/canada/vancouver_2/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.11734,
+          21.56191
+        ]
+      },
+      "properties": {
+        "title": "Jeddah",
+        "phone": "012 6188566",
+        "url": "/locations/kingdom-of-saudi-arabia/jeddah/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.50912,
+          51.54049
+        ]
+      },
+      "properties": {
+        "title": "Roosendaal",
+        "phone": "",
+        "url": "/locations/the-netherlands/roosendaal/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.32473,
+          49.99003
+        ]
+      },
+      "properties": {
+        "title": "Ginsheim-Gustavsburg",
+        "phone": "+49 69 87 00 882 0",
+        "url": "/locations/germany/ginsheim-gustavsburg-warehouse/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.41531,
+          51.19294
+        ]
+      },
+      "properties": {
+        "title": "Antwerp",
+        "phone": "+32 3 318 72 00",
+        "url": "/locations/belgium/antwerp/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.77743,
+          1.49703
+        ]
+      },
+      "properties": {
+        "title": "Johor Bahru",
+        "phone": "+607 330 5902",
+        "url": "/locations/malaysia/johor-bahru/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.2658342,
+          5.3002938
+        ]
+      },
+      "properties": {
+        "title": "Penang",
+        "phone": "+6019 477 3772",
+        "url": "/locations/malaysia/penang/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.000893,
+          40.797951
+        ]
+      },
+      "properties": {
+        "title": "Salt Lake City (SLC)",
+        "phone": "+1 385 220 4021",
+        "url": "/locations/usa/salt-lake-city/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.60881,
+          -33.42343
+        ]
+      },
+      "properties": {
+        "title": "Santiago",
+        "phone": "",
+        "url": "/locations/chile/santiago/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.706876,
+          -33.875443
+        ]
+      },
+      "properties": {
+        "title": "Cape Town",
+        "phone": "+27 87 133 2317",
+        "url": "/locations/south-africa/cape-town/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.523959,
+          -22.93662
+        ]
+      },
+      "properties": {
+        "title": "Logistics in Walvis Bay, Namibia",
+        "phone": "+264 81 128 6919",
+        "url": "/locations/namibia/walvis-bay/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.991929332092447,
+          52.17744395787345
+        ]
+      },
+      "properties": {
+        "title": "Warsaw",
+        "phone": "+ 48 882 082 048",
+        "url": "/locations/poland/warsaw/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.539204,
+          40.43661
+        ]
+      },
+      "properties": {
+        "title": "Madrid, Spain",
+        "phone": "+34 916713100",
+        "url": "/locations/spain/madrid/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.13262,
+          41.365427
+        ]
+      },
+      "properties": {
+        "title": "Barcelona, Spain",
+        "phone": "",
+        "url": "/locations/spain/barcelona/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7231,
+          45.63
+        ]
+      },
+      "properties": {
+        "title": "Malpensa, Italy",
+        "phone": "+39 02 92681090",
+        "url": "/locations/italy/malpensa/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.375039,
+          44.614749
+        ]
+      },
+      "properties": {
+        "title": "Bologna, Italy",
+        "phone": "+39 051 0229215",
+        "url": "/locations/italy/bologna/"
+      }
+    }
+  ]
+}

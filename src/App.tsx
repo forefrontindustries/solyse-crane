@@ -9,6 +9,7 @@ import { SolutionPage } from "./pages/SolutionPage"
 import { HomePageV2 } from "./pages/HomePageV2"
 import { AerospacePageV2 } from "./pages/AerospacePageV2"
 import { AerospacePageV3 } from "./pages/AerospacePageV3"
+import { CViewPage } from "./pages/CViewPage"
 
 export default function App() {
   return (
@@ -24,6 +25,8 @@ export default function App() {
         <Route path="/v2" element={<HomePageV2 />} />
         <Route path="/v2/aerospace" element={<AerospacePageV2 />} />
         <Route path="/v3/aerospace" element={<AerospacePageV3 />} />
+        <Route path="/technology/shipment-tracking" element={<CViewPage />} />
+        <Route path="/c-view" element={<CViewPage />} />
       </Routes>
     </BrowserRouter>
   )
