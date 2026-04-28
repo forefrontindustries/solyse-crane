@@ -34,7 +34,7 @@ export function Hero() {
 
       {/* Content */}
       <div className="relative z-10 pt-32 md:pt-40 pb-16 md:pb-20 px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[90rem] mx-auto">
           {/* Card — tighter padding, higher contrast, anchored */}
           <div className={cn(
             "bg-white/[0.09] backdrop-blur-xl border border-white/[0.14] rounded-2xl p-7 md:p-10 shadow-2xl shadow-black/25 w-full lg:w-[50%] transition-all duration-1000",

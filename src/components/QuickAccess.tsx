@@ -47,7 +47,7 @@ const quickLinks = [
 export function QuickAccess() {
   return (
     <div className="w-full bg-[#f4f6f9] border-b border-[#e2e6ed]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center">
+      <div className="max-w-[90rem] mx-auto px-6 lg:px-12 flex items-center">
         <span className="hidden lg:block text-[11px] font-semibold tracking-[0.12em] uppercase text-slate-400 mr-8 flex-shrink-0">
           Quick actions
         </span>

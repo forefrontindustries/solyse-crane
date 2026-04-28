@@ -2,6 +2,7 @@ import { Header } from "../components/Header"
 import { Hero } from "../components/Hero"
 import { QuickAccess } from "../components/QuickAccess"
 import { IndustryEntryA } from "../components/IndustryEntry"
+import { ProofStats } from "../components/ProofStats"
 import { Insights } from "../components/Insights"
 import { Services } from "../components/Services"
 import { Technology } from "../components/Technology"
@@ -17,6 +18,7 @@ export function HomePage() {
       <Hero />
       <QuickAccess />
       <IndustryEntryA />
+      <ProofStats />
       <Insights />
       <Services />
       <Technology />
