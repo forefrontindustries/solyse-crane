@@ -1,10 +1,6 @@
-import { CTA } from "./CTA"
-
 export function Footer() {
   return (
-    <>
-      <CTA />
-      <footer className="bg-foreground pt-[76px] pb-[38px] px-6 lg:px-12">
+    <footer className="bg-foreground pt-[76px] pb-[38px] px-6 lg:px-12">
       {/* Top grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2.2fr_1fr_1fr_1fr_1.3fr] gap-12 mb-12 pb-12">
         {/* Brand column */}
@@ -185,6 +181,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-    </>
   )
 }

@@ -7,6 +7,7 @@ import { Technology } from "../components/Technology"
 import { About } from "../components/About"
 import { ProofInPractice } from "../components/ProofInPractice"
 import { KnowledgeInsights } from "../components/KnowledgeInsights"
+import { CTA } from "../components/CTA"
 import { Footer } from "../components/Footer"
 
 export function HomePage() {
@@ -23,6 +24,7 @@ export function HomePage() {
       <div className="bg-white h-16 md:h-24" />
       <ProofInPractice />
       <KnowledgeInsights />
+      <CTA />
       <Footer />
     </div>
   )
