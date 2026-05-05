@@ -52,7 +52,7 @@ export function ProofInPractice() {
 
   return (
     <section ref={sectionRef} className="py-20 md:py-28 bg-[#f7f9fb]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-12">
         {/* Section Label */}
         <div className={cn("flex items-center gap-3 mb-4 transition-all duration-700", isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>
           <div className="w-8 h-[3px] bg-[#0ea554] rounded-full" />

@@ -53,7 +53,7 @@ export function About() {
       {/* Diagonal background accent — offset higher so it doesn't align with content edges */}
       <div className="absolute right-0 -top-24 bottom-0 w-[55%] pointer-events-none" style={{ background: "linear-gradient(140deg, transparent 28%, #f4f6f9 28%)" }} />
 
-      <div className={`relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+      <div className={`relative z-10 max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         {/* Images */}
         <div className="relative h-[420px] lg:h-[500px]">
           <div className="absolute inset-0 right-20 bottom-20 rounded-[14px] overflow-hidden shadow-[0_20px_60px_rgba(11,37,69,0.14)]">

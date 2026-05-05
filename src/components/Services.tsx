@@ -104,6 +104,7 @@ export function Services() {
 
   return (
     <section ref={ref} id="services" className="py-24 px-6 lg:px-12 bg-white">
+      <div className="max-w-[1600px] mx-auto">
       {/* Header */}
       <div className={`flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 mb-[52px] transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
         <div>
@@ -172,6 +173,7 @@ export function Services() {
             </div>
           </a>
         ))}
+      </div>
       </div>
     </section>
   )

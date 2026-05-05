@@ -25,7 +25,7 @@ export function CTA() {
       <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-secondary/20 blur-2xl" />
       <div className="absolute bottom-20 right-10 w-32 h-32 rounded-full bg-secondary/10 blur-3xl" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className={cn("inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8 transition-all duration-500", isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>

@@ -62,7 +62,7 @@ const quickLinks = [
 export function QuickAccess() {
   return (
     <div className="w-full bg-[#f4f6f9] border-b border-[#dde3ec]">
-      <div className="flex w-full">
+      <div className="flex w-full max-w-[1600px] mx-auto">
         {quickLinks.map((link, i) => (
           <a
             key={link.label}
