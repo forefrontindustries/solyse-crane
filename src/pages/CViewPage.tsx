@@ -418,7 +418,7 @@ function QuoteCTA() {
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
-            <Link to="/" className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-3.5 rounded-lg hover:brightness-110 transition-all">
+            <Link to="/" className="inline-flex items-center gap-2 bg-secondary text-white font-semibold px-8 py-3.5 rounded-lg hover:brightness-110 transition-all">
               Request a Quote
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path d="M5 12h14M12 5l7 7-7 7" />

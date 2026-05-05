@@ -296,7 +296,7 @@ function MapSection({
               onClick={() => setActiveRegion(t.id === activeRegion ? "all" : t.id)}
               className={`px-4 py-2 rounded-full text-[13px] font-medium transition-all duration-200 border ${
                 activeRegion === t.id
-                  ? "bg-primary text-white border-primary shadow-md"
+                  ? "bg-secondary text-white border-secondary shadow-md"
                   : "bg-white text-muted-foreground border-border/50 hover:border-secondary/40 hover:text-foreground"
               }`}
             >

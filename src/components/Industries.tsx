@@ -95,7 +95,7 @@ export function Industries() {
 
         {/* CTA */}
         <div className={cn("text-center mt-16 transition-all duration-500 delay-700", isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>
-          <a href="#" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-colors">
+          <a href="#" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
             Explore All Industries
             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
           </a>
