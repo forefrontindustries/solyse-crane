@@ -50,16 +50,16 @@ export function Technology() {
 
   return (
     <section id="technology" ref={sectionRef} className="py-24 bg-background">
-      <div className="max-w-[90rem] mx-auto px-6 lg:px-12">
+      <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left – Content */}
           <div>
-            <span className={cn("inline-block text-secondary font-semibold mb-4 transition-all duration-500 font-display", isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>C-VIEW PLATFORM</span>
+            <span className={cn("inline-block text-secondary font-semibold mb-4 transition-all duration-500 font-display", isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>TECHNOLOGY PLATFORM</span>
             <h2 className={cn("text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 transition-all duration-500 delay-100 text-balance font-display", isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>
-              How we keep your shipments on track
+              Visibility and control at your fingertips
             </h2>
             <p className={cn("text-lg text-muted-foreground mb-10 leading-relaxed transition-all duration-500 delay-200", isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>
-              Complete visibility and control across every shipment, every mode, every mile — so you always know what's happening and what's next.
+              CraneTMS powers your supply chain with real-time visibility, advanced analytics, and seamless integration with your existing systems.
             </p>
 
             {/* Tab Buttons */}
@@ -98,8 +98,8 @@ export function Technology() {
                     </li>
                   ))}
                 </ul>
-                <a href="#" className="inline-flex items-center gap-2 bg-secondary hover:bg-secondary/90 text-white font-semibold px-6 py-3 rounded-lg transition-colors mt-4">
-                  See how it works
+                <a href="#" className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-3 rounded-lg transition-colors mt-4">
+                  Learn More
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                 </a>
               </div>
