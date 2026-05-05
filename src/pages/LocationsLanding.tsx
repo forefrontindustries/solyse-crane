@@ -102,7 +102,7 @@ export function LocationsLanding() {
 
       {/* Breadcrumb */}
       <div className="bg-[#f4f6f9] pt-[120px] lg:pt-[140px] pb-0">
-        <div className="px-6 lg:px-12 pb-5 max-w-[90rem] mx-auto">
+        <div className="px-6 lg:px-12 pb-5 max-w-[1600px] mx-auto">
           <nav className="flex items-center gap-2 text-[12px] text-muted-foreground">
             <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
             <span className="opacity-40">/</span>
@@ -152,7 +152,7 @@ function HeroSection({ totalLocations, totalCountries }: { totalLocations: numbe
         <img src="/locations-map-hero.png" alt="Global logistics network" className="w-full h-full object-cover opacity-60" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/90 via-[#0a1628]/70 to-transparent" />
       </div>
-      <div className={`relative px-6 lg:px-12 py-20 lg:py-32 max-w-[90rem] mx-auto transition-all duration-1000 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+      <div className={`relative px-6 lg:px-12 py-20 lg:py-32 max-w-[1600px] mx-auto transition-all duration-1000 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
             <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
@@ -277,7 +277,7 @@ function MapSection({
 
   return (
     <section ref={reveal.ref as React.RefObject<HTMLElement>} className={`py-16 lg:py-24 px-6 lg:px-12 transition-all duration-700 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-      <div className="max-w-[90rem] mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         {/* Section Header */}
         <div className="mb-8">
           <div className="flex items-center gap-2 mb-3">
@@ -462,7 +462,7 @@ function GlobalPresenceBrowser({
 
   return (
     <section ref={reveal.ref as React.RefObject<HTMLElement>} className={`py-16 lg:py-24 px-6 lg:px-12 bg-[#f8f9fb] transition-all duration-700 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-      <div className="max-w-[90rem] mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         {/* Section Header */}
         <div className="mb-10">
           <div className="flex items-center gap-2 mb-3">

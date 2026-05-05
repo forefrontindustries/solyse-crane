@@ -84,18 +84,20 @@ function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/80 to-[#0a1628]/50" />
       </div>
       <div className={`relative px-6 lg:px-12 py-20 lg:py-32 transition-all duration-1000 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
-            <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-            <span className="text-[13px] text-white/80 font-medium">{solutions.length} Logistics Services</span>
+        <div className="max-w-[1600px] mx-auto">
+          <div className="max-w-4xl">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
+              <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+              <span className="text-[13px] text-white/80 font-medium">{solutions.length} Logistics Services</span>
+            </div>
+            <h1 className="font-display text-4xl lg:text-6xl font-bold text-white leading-[1.1] mb-6">
+              International Logistics Services
+            </h1>
+            <p className="text-lg lg:text-xl text-white/70 max-w-2xl leading-relaxed">
+              From air and ocean freight to contract logistics and customs brokerage, Crane Worldwide delivers
+              end-to-end supply chain solutions tailored to your business.
+            </p>
           </div>
-          <h1 className="font-display text-4xl lg:text-6xl font-bold text-white leading-[1.1] mb-6">
-            International Logistics Services
-          </h1>
-          <p className="text-lg lg:text-xl text-white/70 max-w-2xl leading-relaxed">
-            From air and ocean freight to contract logistics and customs brokerage, Crane Worldwide delivers
-            end-to-end supply chain solutions tailored to your business.
-          </p>
         </div>
       </div>
     </section>
@@ -106,7 +108,7 @@ function HeroSection() {
 function ServicesGrid() {
   return (
     <section className="py-16 lg:py-24 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {solutions.map((solution, i) => (
             <ServiceCard key={solution.slug} solution={solution} index={i} />

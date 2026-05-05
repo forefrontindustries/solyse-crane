@@ -65,7 +65,7 @@ export function SolutionPage() {
 
       {/* Breadcrumb */}
       <div className="bg-[#f4f6f9] pt-[120px] lg:pt-[140px] pb-0">
-        <div className="px-6 lg:px-12 pb-5">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-12 pb-5">
           <nav className="flex items-center gap-2 text-[12px] text-muted-foreground">
             <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
             <span className="opacity-40">/</span>
@@ -99,6 +99,7 @@ function HeroSection({ solution }: { solution: Solution }) {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/75 to-[#0a1628]/40" />
       </div>
       <div className={`relative px-6 lg:px-12 py-20 lg:py-32 transition-all duration-1000 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        <div className="max-w-[1600px] mx-auto">
         <div className="max-w-4xl">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 rounded-xl bg-secondary/20 border border-secondary/30 flex items-center justify-center">
@@ -132,6 +133,7 @@ function HeroSection({ solution }: { solution: Solution }) {
             </a>
           </div>
         </div>
+        </div>
       </div>
     </section>
   )
@@ -142,7 +144,7 @@ function IntroSection({ solution }: { solution: Solution }) {
   const reveal = useReveal()
   return (
     <section ref={reveal.ref as React.RefObject<HTMLElement>} className={`py-16 lg:py-20 px-6 lg:px-12 transition-all duration-700 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           <div className="lg:col-span-3">
             <h2 className="font-display text-3xl lg:text-4xl font-bold mb-6">
@@ -182,7 +184,7 @@ function FeaturesSection({ solution }: { solution: Solution }) {
   if (!solution.features) return null
   return (
     <section ref={reveal.ref as React.RefObject<HTMLElement>} className={`py-16 lg:py-20 bg-[#f4f6f9] px-6 lg:px-12 transition-all duration-700 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         <h2 className="font-display text-3xl lg:text-4xl font-bold mb-4">Complete {solution.name} Services</h2>
         <p className="text-muted-foreground mb-12 text-[15px] max-w-2xl">
           End-to-end solutions that cover every stage of the shipping process.
@@ -222,7 +224,7 @@ function WhyChooseSection({ solution }: { solution: Solution }) {
   if (!solution.whyChoose) return null
   return (
     <section ref={reveal.ref as React.RefObject<HTMLElement>} className={`py-16 lg:py-24 px-6 lg:px-12 transition-all duration-700 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         <div className="text-center mb-14">
           <h2 className="font-display text-3xl lg:text-4xl font-bold mb-4">
             Why Choose Crane Worldwide for {solution.name}?
@@ -259,7 +261,7 @@ function IndustriesSection({ solution }: { solution: Solution }) {
   if (!solution.industries) return null
   return (
     <section ref={reveal.ref as React.RefObject<HTMLElement>} className={`py-16 lg:py-20 bg-foreground px-6 lg:px-12 transition-all duration-700 ${reveal.visible ? "opacity-100" : "opacity-0"}`}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         <h2 className="font-display text-3xl lg:text-4xl font-bold text-white mb-4">Industries We Serve</h2>
         <p className="text-white/60 mb-10 text-[15px] max-w-2xl">
           Our {solution.name} solutions cater to a wide range of industries, ensuring your cargo arrives safely and efficiently.
@@ -289,7 +291,7 @@ function OtherServicesSection({ others }: { others: Solution[] }) {
   const reveal = useReveal()
   return (
     <section ref={reveal.ref as React.RefObject<HTMLElement>} className={`py-16 lg:py-20 bg-[#f4f6f9] px-6 lg:px-12 transition-all duration-700 ${reveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         <div className="flex items-center justify-between mb-10">
           <div>
             <h2 className="font-display text-2xl lg:text-3xl font-bold">Explore More Services</h2>

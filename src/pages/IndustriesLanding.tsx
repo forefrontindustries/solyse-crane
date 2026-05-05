@@ -121,6 +121,7 @@ export function IndustriesLanding() {
           <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/95 to-foreground/60" />
         </div>
         <div className="relative px-6 lg:px-12 py-20 lg:py-28">
+          <div className="max-w-[1600px] mx-auto">
           <div className="max-w-[640px]">
             <div className="flex items-center gap-2.5 mb-4">
               <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
@@ -135,6 +136,7 @@ export function IndustriesLanding() {
               Every industry has unique supply chain challenges. We've spent decades building
               specialized teams, technology, and networks to solve them.
             </p>
+          </div>
           </div>
         </div>
       </section>

@@ -22,7 +22,7 @@ const serviceItems = [
 ]
 
 const industryItems = [
-  { title: "Aerospace & Defense", href: "/v3/aerospace", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg> },
+  { title: "Aerospace & Defense", href: "/aerospace", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg> },
   { title: "Automotive", href: "/industries/automotive", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/></svg> },
   { title: "Consumer Goods", href: "/industries/consumer-goods", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg> },
   { title: "Cruise, Marine & Hospitality", href: "/industries/cruise-marine", icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="w-5 h-5"><path d="M2 20s3-1 5-1 4 2 7 2 5-2 8-2"/><path d="M4 17V7a2 2 0 012-2h12a2 2 0 012 2v10"/><path d="M9 5V3M15 5V3"/></svg> },

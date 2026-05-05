@@ -27,6 +27,7 @@ export default function App() {
         <Route path="/solutions/:slug" element={<SolutionPage />} />
         <Route path="/v2" element={<HomePageV2 />} />
         <Route path="/v2/aerospace" element={<AerospacePageV2 />} />
+        <Route path="/aerospace" element={<AerospacePageV3 />} />
         <Route path="/v3/aerospace" element={<AerospacePageV3 />} />
         <Route path="/technology/shipment-tracking" element={<CViewPage />} />
         <Route path="/c-view" element={<CViewPage />} />
