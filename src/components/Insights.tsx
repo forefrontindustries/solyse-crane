@@ -56,7 +56,7 @@ export function Insights() {
             <div className="flex items-center gap-2.5 mb-3">
               <span className="w-[26px] h-[2px] bg-secondary rounded-sm" />
               <span className="text-[11px] font-bold tracking-[0.18em] uppercase text-secondary">
-                Industry Solutions
+                Find Your Industry Solution
               </span>
             </div>
             <h2 className="font-display font-extrabold text-[clamp(30px,4.2vw,54px)] leading-[1.06] text-foreground tracking-tight">
