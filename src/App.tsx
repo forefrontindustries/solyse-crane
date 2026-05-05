@@ -10,6 +10,7 @@ import { HomePageV2 } from "./pages/HomePageV2"
 import { AerospacePageV2 } from "./pages/AerospacePageV2"
 import { AerospacePageV3 } from "./pages/AerospacePageV3"
 import { CViewPage } from "./pages/CViewPage"
+import { DesignSystemPage } from "./pages/DesignSystemPage"
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/v3/aerospace" element={<AerospacePageV3 />} />
         <Route path="/technology/shipment-tracking" element={<CViewPage />} />
         <Route path="/c-view" element={<CViewPage />} />
+        <Route path="/design-system" element={<DesignSystemPage />} />
       </Routes>
     </BrowserRouter>
   )
