@@ -1,7 +1,6 @@
 import { useParams, Link } from "react-router-dom"
 import { useRef, useState, useEffect } from "react"
 import { Header } from "../components/Header"
-import { CTA } from "../components/CTA"
 import { Footer } from "../components/Footer"
 
 const cn = (...classes: (string | false | undefined)[]) => classes.filter(Boolean).join(" ")
@@ -280,7 +279,6 @@ export function CaseStudyPage() {
         </div>
       </div>
 
-      <CTA />
       <Footer />
     </div>
   )
