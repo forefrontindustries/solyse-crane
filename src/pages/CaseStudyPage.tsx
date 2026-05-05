@@ -163,7 +163,7 @@ export function CaseStudyPage() {
           <img src={study.heroImage} alt={study.title} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628]/90 via-[#0a1628]/50 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-6 lg:px-12 pb-10 md:pb-14">
-            <div className="max-w-[1200px] mx-auto">
+            <div className="max-w-[1400px] mx-auto">
               <div className={cn("transition-all duration-700", heroReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6")}>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-[11px] font-semibold tracking-[0.12em] uppercase text-secondary bg-secondary/20 px-3 py-1 rounded-full">{study.industry}</span>
@@ -178,7 +178,7 @@ export function CaseStudyPage() {
       </section>
 
       {/* Content */}
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-12 py-16 md:py-20">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-16 md:py-20">
         <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-12">
