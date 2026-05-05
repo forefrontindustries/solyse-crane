@@ -60,8 +60,11 @@ export function Insights() {
               </span>
             </div>
             <h2 className="font-display font-extrabold text-[clamp(30px,4.2vw,54px)] leading-[1.06] text-foreground tracking-tight">
-              Industry Insights
+              Find Your Industry Solution
             </h2>
+            <p className="mt-3 text-lg text-muted-foreground max-w-2xl">
+              Solutions tailored to your business and supply chain challenges
+            </p>
           </div>
           <Link
             to="/industries"
