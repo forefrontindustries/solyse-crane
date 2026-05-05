@@ -11,6 +11,8 @@ import { AerospacePageV2 } from "./pages/AerospacePageV2"
 import { AerospacePageV3 } from "./pages/AerospacePageV3"
 import { CViewPage } from "./pages/CViewPage"
 import { DesignSystemPage } from "./pages/DesignSystemPage"
+import { CaseStudyPage } from "./pages/CaseStudyPage"
+import { InsightArticlePage } from "./pages/InsightArticlePage"
 
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="/technology/shipment-tracking" element={<CViewPage />} />
         <Route path="/c-view" element={<CViewPage />} />
         <Route path="/design-system" element={<DesignSystemPage />} />
+        <Route path="/case-studies/:slug" element={<CaseStudyPage />} />
+        <Route path="/insights/:slug" element={<InsightArticlePage />} />
       </Routes>
     </BrowserRouter>
   )

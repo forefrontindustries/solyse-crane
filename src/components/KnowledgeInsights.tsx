@@ -1,4 +1,5 @@
 import { useRef } from "react"
+import { Link } from "react-router-dom"
 import { useInView } from "../hooks/useInView"
 
 const cn = (...classes: (string | false | undefined)[]) => classes.filter(Boolean).join(" ")
@@ -11,6 +12,7 @@ const articles = [
     excerpt: "Heightened tensions in the Strait of Hormuz are creating routing challenges for Asia–Europe trade. Our analysis covers alternative corridors, rate impacts, and mitigation strategies.",
     date: "Apr 28, 2026",
     image: "https://storage.googleapis.com/runable-templates/cli-uploads%2FiIIRybateRYgKiTOlAP7KnqoCc65vPfm%2FaJ5SmmcttRQEitnRoi5SC%2Fshipping-strait-of-hormuz-container-ship-unsplash_1.jpg",
+    href: "/insights/iran-shipping-disruption",
   },
   {
     tag: "Seasonal Planning",
@@ -19,6 +21,7 @@ const articles = [
     excerpt: "Factory shutdowns begin earlier each year. Start capacity planning now to avoid premium rates and space shortages.",
     date: "Apr 22, 2026",
     image: "https://storage.googleapis.com/runable-templates/cli-uploads%2FiIIRybateRYgKiTOlAP7KnqoCc65vPfm%2FE6_oDpcHJl0AHpKnChRXT%2Flunar-new-year-cargo-port-logistics_9.jpg",
+    href: "/insights/lunar-new-year-2027",
   },
   {
     tag: "Regulatory Update",
@@ -27,6 +30,7 @@ const articles = [
     excerpt: "The EU Carbon Border Adjustment Mechanism enters its next phase. Here's what documentation you need in place.",
     date: "Apr 15, 2026",
     image: "https://storage.googleapis.com/runable-templates/cli-uploads%2FiIIRybateRYgKiTOlAP7KnqoCc65vPfm%2FJGQJcXE9Z8agS3_N3RfFU%2Feu-carbon-border-adjustment-customs-compliance_3.jpg",
+    href: "/insights/cbam-compliance-checklist",
   },
 ]
 
@@ -58,10 +62,11 @@ export function KnowledgeInsights() {
         {/* 3-Column Equal Grid */}
         <div className="grid md:grid-cols-3 gap-7">
           {articles.map((article, i) => (
-            <article
+            <Link
               key={i}
+              to={article.href}
               className={cn(
-                "group rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-white",
+                "group rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:border-gray-200 transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-white block",
                 isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               )}
               style={{ transitionDelay: isInView ? `${150 + i * 100}ms` : "0ms" }}
@@ -95,7 +100,7 @@ export function KnowledgeInsights() {
                   </span>
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>
