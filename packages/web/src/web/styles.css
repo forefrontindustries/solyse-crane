@@ -1,0 +1,274 @@
+@import "tailwindcss";
+
+/* ============================================================
+   CRANE WORLDWIDE – Brand Design System
+   Colors sourced from official Brand Guidelines
+   ============================================================ */
+
+@theme {
+  /* Primary Brand Colors */
+  --color-crane-blue: #273473;
+  --color-crane-green: #01803E;
+  
+  /* Secondary Palette */
+  --color-scorpion: #575757;
+  --color-porcelain: #F1F3F4;
+  --color-aqua-forest: #58A472;
+  --color-danube: #6A8ACB;
+  --color-blue-lagoon: #047F7E;
+  --color-marigold: #C18E29;
+  
+  /* Extended / UI */
+  --color-navy-dark: #1B2550;
+  --color-navy-light: #3A4A8A;
+  --color-green-light: #00A34E;
+  --color-green-subtle: #E8F5EE;
+  --color-blue-subtle: #EDF0F8;
+  --color-warm-white: #FAFBFC;
+  --color-dark: #0C1425;
+  --color-dark-card: #111B2E;
+  --color-dark-border: rgba(255,255,255,0.08);
+  
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+}
+
+/* ─── Base ──────────────────────────────────────── */
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  margin: 0;
+}
+
+/* ─── Utility Classes ──────────────────────────── */
+
+.gradient-text-green {
+  background: linear-gradient(135deg, #01803E, #00A34E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-blue {
+  background: linear-gradient(135deg, #273473, #3A4A8A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass card */
+.glass {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.glass-dark {
+  background: rgba(12,20,37,0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ─── Animations ───────────────────────────────── */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(1,128,62,0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(1,128,62,0); }
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-fade-up { animation: fade-up 0.6s ease-out both; }
+.animate-fade-in { animation: fade-in 0.5s ease-out both; }
+.animate-ticker { animation: ticker 40s linear infinite; }
+
+/* Stagger delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+
+/* ─── Mega Menu ────────────────────────────────── */
+
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  z-index: 100;
+}
+
+.nav-item:hover .mega-menu,
+.nav-item:focus-within .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* ─── Custom scrollbar ─────────────────────────── */
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c4c4c4; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #a0a0a0; }
+
+/* ─── Hero Grid Pattern ────────────────────────── */
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* ─── Industry card hover ──────────────────────── */
+
+.industry-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.industry-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(39,52,115,0.08);
+}
+
+.industry-card:hover .ic-arrow {
+  transform: translateX(4px);
+}
+
+.industry-card:hover .ic-num {
+  color: #01803E;
+}
+
+.industry-card:hover .ic-icon {
+  color: #01803E;
+  background: #E8F5EE;
+}
+
+/* ─── Tech card hover ──────────────────────────── */
+
+.tech-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tech-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(1,128,62,0.3);
+  background: rgba(1,128,62,0.06);
+}
+
+.tech-card:hover .tc-icon {
+  color: #00A34E;
+}
+
+/* ─── Pillar card hover ────────────────────────── */
+
+.pillar-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pillar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(39,52,115,0.06);
+  border-color: rgba(1,128,62,0.2);
+}
+
+/* ─── Insight card hover ───────────────────────── */
+
+.insight-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.insight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.insight-card:hover .ins-img img {
+  transform: scale(1.05);
+}
+
+/* ─── Button hover ─────────────────────────────── */
+
+.btn-primary {
+  background: #01803E;
+  color: white;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background: #00A34E;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(1,128,62,0.3);
+}
+
+.btn-outline-white {
+  border: 1.5px solid rgba(255,255,255,0.3);
+  color: white;
+  background: rgba(255,255,255,0.08);
+  transition: all 0.2s;
+}
+
+.btn-outline-white:hover {
+  border-color: white;
+  background: rgba(255,255,255,0.15);
+}
+
+/* ─── Tab system ───────────────────────────────── */
+
+.tab-btn {
+  transition: all 0.25s;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-btn[data-active="true"] {
+  border-bottom-color: #01803E;
+  color: #01803E;
+}
+
+.tab-btn:hover {
+  color: #01803E;
+}
